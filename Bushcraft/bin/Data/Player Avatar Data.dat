@@ -1,0 +1,30 @@
+Avatar Data File
+# Always start with the above line for avatar data
+# The library will not read the rest of the file if
+# the first line is not such.
+
+# This is comment
+# whatever you typed here will not be used
+# as long as you start the line with the '#' sign
+# Every blank line such as the one below will also disregarded
+# as long as there is no space or a carriage return immediately follows
+
+# Input data number 1, The filename for the avatar image
+data/avatar1.bmp
+
+# Then the number of parameter that you want to display
+# In relation, to the Player parameter, this will be similar to 
+# displaying the first N parameters
+# In this case we would like N = 3
+2
+
+# Start with parameter number 1
+# The string describes the parameter
+# followed IMMEDIATELY in the next line by the initial value (integer between 0 and 100)
+# and separated by space the RGB values of the text colour
+# e.g, if you want red, 255 0 0
+-
+100 255 255 255
+# Continue to the next parameter
+-
+100 255 255 255

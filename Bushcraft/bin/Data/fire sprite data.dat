@@ -1,0 +1,31 @@
+Sprite Data File
+# Always start with the above line for sprite data
+# The library will not read the rest of the file if
+# the first line is not such.
+
+# This is comment
+# whatever you typed here will not be used
+# as long as you start the line with the '#' sign
+# Every blank line such as the one below will also disregarded
+# as long as there is no space or a carriage return immediately follows
+
+# Input data number 1, Total number of states/sprite types that the player can be in
+# Say in this case, there are 4
+3
+
+# Make sure you put comment here to remind you what each state corresponds to
+# unlit		0
+# lit		1
+
+
+# Start with state number 1
+# Filename that stores the sprite strips
+# followed IMMEDIATELY in the next line by the width, height and number of frame in the file
+# Separate them with space
+# in the case when width is 17 pixels, height is 24 pixels and 8 frames
+data/FireBase.bmp
+20 22 1
+data/FireAni.bmp
+20 22 2
+data/FireAniCookingMeat.bmp
+20 22 2
