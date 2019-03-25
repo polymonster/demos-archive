@@ -1,0 +1,3 @@
+shader_config
+vertex shadow_depth/shadow_depth_skinnedV.vert
+fragment shadow_depth/shadow_depthF.frag

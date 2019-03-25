@@ -1,0 +1,1 @@
+unsigned char* LoadBMP(const char* lpszFileName, int* width, int* height, int settranscolor, unsigned char transred, unsigned char transgreen,unsigned char transblue);

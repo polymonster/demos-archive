@@ -1,0 +1,233 @@
+/****************************************
+/	Al (c) 2008 - sprite.cpp
+/****************************************
+/	2D Sprite
+/****************************************/
+
+
+/*************** INCLUDES ***************/
+
+#include "sprite.h"
+
+#include "2dscene.h"
+
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+
+
+/*************** CONSTANTS **************/
+
+#define		ANIM_SPEED		8.0f
+
+/*********** GLOBAL VARIABLES ***********/
+
+
+
+/********* FUNCTION PROTOTYPES **********/
+
+
+Sprite::Sprite( char *path_p, char *name_p, float x, float y, unsigned int col ) :
+	Quad( path_p, name_p, x, y, 16, 16, col ),
+	m_dir( 1 ),
+	m_anim_state( ANIM_STATE_STAND ),
+	m_ticker( 0 )
+{
+	m_frame_origin.x = 0.0f;
+	m_frame_origin.y = 0.0f;
+
+<<<<<<< .mine
+	// load the animation data file here...!
+	m_sprite.frame_size = NULL;
+
+=======
+>>>>>>> .r156
+	m_sprite.texture_size.x = (float)m_tex.w;
+	m_sprite.texture_size.y = (float)m_tex.h;
+	
+	char filename[64];
+	sprintf( filename, "data/sprite configs/%s.asc", name_p );
+	read_script( filename );
+
+	// ----------------------------------------
+
+	m_texel_to_uv = 1.0f / m_sprite.texture_size.x;
+}
+
+
+void Sprite::read_script( char *script_p )
+{
+	std::ifstream fin;
+
+	fin.open(script_p);
+
+	char command[32];
+	int total_num_frames;
+
+	while(!fin.eof())
+	{
+		fin >> command;
+
+		if(!strcmp(command,"number_of_states"))
+		{
+			fin >>  m_sprite.anim_states;
+		}
+		else if(!strcmp(command,"state_frames"))
+		{
+			int stateID;
+			fin >> stateID;
+			
+			int frames;
+			fin >> frames;
+			m_sprite.frames[stateID] = frames;
+		}
+		else if(!strcmp(command,"total_frames"))
+		{
+			fin >> total_num_frames;
+
+			m_sprite.frame_size = new vector2[total_num_frames];
+
+			int frame_counter = 0;
+
+			while(frame_counter != total_num_frames)
+			{
+				fin >> command;
+
+				if(!strcmp(command,"for"))
+				{
+					int loop_count;
+
+					fin >> loop_count;
+
+					fin >> command;
+
+					int x,y;
+					fin >> x;
+					fin >> y;
+
+					for(int i = 0; i < loop_count; i++)
+					{
+						m_sprite.frame_size[frame_counter].x = x;
+						m_sprite.frame_size[frame_counter].y = y;
+						
+						frame_counter++;
+					}
+
+					if(frame_counter != total_num_frames) fin >> command;
+				}
+			}
+		}
+		else if(!strcmp(command,"#end"))
+		{
+			fin.close();
+			return;
+		}
+	}
+}
+
+
+Sprite::Sprite() {}
+
+Sprite::~Sprite()
+{
+	if( m_sprite.frame_size )
+		delete [] m_sprite.frame_size;
+}
+
+
+
+void Sprite::execute( void )
+{
+	int last_frame = m_current_frame;
+
+	switch( m_anim_state )
+	{
+	case ANIM_STATE_STAND:
+		m_current_frame = 0;
+		if( m_current_frame != last_frame )
+			update_animation();
+		m_ticker = 0.0f;
+		break;
+
+	case ANIM_STATE_WALK:
+	case ANIM_STATE_RUN:
+		m_ticker += g_scene_p->m_game_time * 160.0f;
+		if( m_ticker >= ANIM_SPEED )
+		{
+			int final_frame = 0;
+			for( int i = 0; i < m_anim_state+1; i++ )
+				final_frame += m_sprite.frames[i];
+
+			int start_frame = 0;
+			for( int i = 0; i < m_anim_state; i++ )
+				start_frame += m_sprite.frames[i];
+
+			m_current_frame++;
+			if( m_current_frame >= final_frame || m_current_frame < start_frame)
+				m_current_frame = final_frame - m_sprite.frames[m_anim_state];
+			m_ticker = 0.0f;
+
+			update_animation();
+		}
+		break;
+
+	case ANIM_STATE_JUMP:
+		break;
+
+	}
+
+	Quad::execute();
+}
+
+
+void Sprite::render( void )
+{
+	float u[2], v[2];
+
+	if( m_dir )
+	{
+		u[0] = ( m_frame_origin.x * m_texel_to_uv );
+		u[1] = u[0] + (m_sprite.frame_size[m_current_frame].x * m_texel_to_uv );
+	}
+	else
+	{
+		u[1] = ( m_frame_origin.x * m_texel_to_uv );
+		u[0] = u[1] + (m_sprite.frame_size[m_current_frame].x * m_texel_to_uv );
+	}
+
+	v[0] = m_frame_origin.y * m_texel_to_uv;
+	v[1] = v[0] + ( m_sprite.frame_size[m_current_frame].y * m_texel_to_uv );
+
+	m_size.x = (float)m_sprite.frame_size[m_current_frame].x;
+	m_size.y = (float)m_sprite.frame_size[m_current_frame].y;
+
+	Quad::draw_textured_quad( u[0], u[1], v[0], v[1] );
+
+}
+
+
+void Sprite::update_animation( void )
+{
+	float max_y = 0;
+	vector2 new_pos;
+	new_pos.x = 0;
+	new_pos.y = 0;
+
+	// find the current frame in our sprite texture
+	for( int i = 0; i < m_current_frame; i++ )
+	{
+		if( m_sprite.frame_size[i].y > max_y )
+			max_y = m_sprite.frame_size[i].y;
+
+		new_pos.x += m_sprite.frame_size[i].x;
+
+		if( new_pos.x >= m_sprite.texture_size.x )
+		{
+			new_pos.x = 0;
+			new_pos.y = max_y;
+		}
+	}
+
+	m_frame_origin.x = new_pos.x;
+	m_frame_origin.y = new_pos.y;
+}

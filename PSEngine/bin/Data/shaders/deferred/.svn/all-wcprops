@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/deferred
+END
+deferred.glsl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/deferred/deferred.glsl
+END
+deferredF.frag
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/deferred/deferredF.frag
+END
+deferredV.vert
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/deferred/deferredV.vert
+END

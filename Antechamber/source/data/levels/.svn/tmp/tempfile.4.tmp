@@ -1,0 +1,22 @@
+spawn 0 8 ;
+control_panel 8 6 0 ;
+control_panel 8 14 1 ;
+control_panel 24 2 2 ;
+turret 6 2 2 0 ;
+turret 21 1 1 1 ;
+turret 11 4 2 2 ;
+turret 17 4 2 2 ;
+turret 14 4 2 2 ;
+turret 31 1 2 0 ;
+turret 37 8 3 0 ;
+smartball 17 14 ;
+smartball 25 7 ;
+smartball 40 7 ;
+gate 10 13 0 0 ;
+<<<<<<< .mine
+gate 40 6 0 0 ;
+gate 40 7 1 0 ;
+=======
+gate 19 11 1 1 ;
+gate 35 5 1 2 ;
+>>>>>>> .r209

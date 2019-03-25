@@ -1,0 +1,8 @@
+model: railgun
+modeldir: data/models/guns/railgun
+range: 5000
+fireRate: 1.5
+fireTimer: 0
+bulletSpeed: 100
+shotType: 3
+damage: 20

@@ -1,0 +1,6 @@
+skeleton Zombie/Zombie_Test_Skele.csf
+mesh Zombie/Zombie_Test_Mesh_Head.cmf zombie_head_tex.tga
+mesh Zombie/Zombie_Test_Mesh_Torso.cmf zombie_torso_tex.tga
+animation Zombie/Zombie_Test_Animation.caf
+animation Zombie/Zombie_Animation_Walk.caf
+animation Zombie/Zombie_Animation_Fight.caf

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="3DCoursework"
+	ProjectGUID="{BE66B6D1-F3C0-4F56-A990-80F117590C97}"
+	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="Debug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;Source Code&quot;;&quot;Source Code/main&quot;; &quot;Source Code/helpers&quot;; &quot;Source Code/maths&quot;; &quot;Source Code/Asset Manager&quot;; &quot;Source Code/Asset Manager/Texture Manager&quot;; &quot;Source Code/GLee&quot;; &quot;Source Code/Asset Manager/Model Manager&quot;; &quot;Source Code/GLee/&quot;;&quot;Source Code/Input&quot;;&quot;Source Code/Shader&quot;;&quot;Source Code/Scene&quot;;&quot;Source Code/Scene/Objects&quot;;&quot;Source Code/Lighting/&quot;"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
+				MinimalRebuild="true"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="1"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="4"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)/3DCoursework.exe"
+				LinkIncremental="2"
+				GenerateDebugInformation="true"
+				ProgramDatabaseFile="$(OutDir)/3DCoursework.pdb"
+				SubSystem="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="Release"
+			IntermediateDirectory="Release"
+			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;Source Code&quot;;&quot;Source Code/main&quot;; &quot;Source Code/helpers&quot;; &quot;Source Code/maths&quot;; &quot;Source Code/Asset Manager&quot;; &quot;Source Code/Asset Manager/Texture Manager&quot;; &quot;Source Code/GLee&quot;; &quot;Source Code/Asset Manager/Model Manager&quot;; &quot;Source Code/GLee/&quot;;&quot;Source Code/Input&quot;;&quot;Source Code/Shader&quot;;&quot;Source Code/Scene&quot;;&quot;Source Code/Scene/Objects&quot;;&quot;Source Code/Lighting/&quot;"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
+				RuntimeLibrary="0"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="true"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)/3DCoursework.exe"
+				LinkIncremental="1"
+				GenerateDebugInformation="true"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<Filter
+				Name="Model Manager"
+				>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Model Manager\3ds.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Model Manager\3ds.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Model Manager\3dsLoader.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Model Manager\3dsLoader.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Model Manager\modelManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Model Manager\modelManager.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Texture Manager"
+				>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Texture Manager\myTga.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Texture Manager\myTga.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Texture Manager\textureSingleton.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Asset Manager\Texture Manager\textureSingleton.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Helpers"
+				>
+				<File
+					RelativePath=".\Source Code\Helpers\DialogueHelpers.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Helpers\Fbo.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Helpers\Fbo.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Helpers\Fonts.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Helpers\Fonts.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Helpers\Helpers.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Helpers\Helpers.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Helpers\VariableConsole.cpp"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Main"
+				>
+				<File
+					RelativePath=".\Source Code\Main\Globals.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Main\Init.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Main\Main.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Main\main.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Main\TimerSingleton.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Main\TimerSingleton.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Shader Manager"
+				>
+				<File
+					RelativePath=".\Source Code\Shader\ShaderManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Shader\ShaderManager.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Shader\textfile.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Shader\textfile.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Maths"
+				>
+				<File
+					RelativePath=".\Source Code\Maths\Frustum.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Maths\myMath.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Maths\myMath.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="GLee"
+				>
+				<File
+					RelativePath=".\Source Code\GLee\GLee.c"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\GLee\GLee.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Input"
+				>
+				<File
+					RelativePath=".\Source Code\Input\Input.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Input\Input.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Scene"
+				>
+				<File
+					RelativePath=".\Source Code\Octree.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Octree.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Scene\scene.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Scene\scene.h"
+					>
+				</File>
+				<Filter
+					Name="Objects"
+					>
+					<File
+						RelativePath=".\ball.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Source Code\Scene\Objects\ball.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Source Code\Scene\Objects\skyBox.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Source Code\Scene\Objects\skyBox.h"
+						>
+					</File>
+					<File
+						RelativePath=".\Source Code\Scene\Objects\toyBlock.cpp"
+						>
+					</File>
+					<File
+						RelativePath=".\Source Code\Scene\Objects\toyBlock.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Lighting"
+				>
+				<File
+					RelativePath=".\Source Code\Lighting\Lighting.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Source Code\Lighting\Lighting.h"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+			<File
+				RelativePath=".\3DCoursework.rc"
+				>
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\resource.h"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

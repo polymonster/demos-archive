@@ -1,0 +1,3 @@
+shader_config
+vertex luminance/luminance_initialV.vert
+fragment luminance/luminance_initialF.frag

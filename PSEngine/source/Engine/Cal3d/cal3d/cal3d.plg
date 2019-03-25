@@ -1,0 +1,154 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Cal3D - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x807 /fo".\Debug/cal3d.res" /d "_DEBUG" "C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\cal3d.rc"" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP34.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /I ".." /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_USRDLL" /D "CAL3D_EXPORTS" /D "_MBCS" /Fo".\Debug/" /Fd".\Debug/" /GZ /c 
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\animation.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\animation_action.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\animation_cycle.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\bone.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\buffersource.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\cal3d_wrapper.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\coreanimation.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\corebone.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\corekeyframe.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\corematerial.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\coremesh.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\coremodel.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\coremorphanimation.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\coreskeleton.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\coresubmesh.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\coresubmorphtarget.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\coretrack.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\error.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\global.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\hardwaremodel.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\loader.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\matrix.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\mesh.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\mixer.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\model.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\morphtargetmixer.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\physique.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\platform.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\quaternion.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\renderer.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\saver.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\skeleton.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\springsystem.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\streamsource.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\submesh.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\tinyxml.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\tinyxmlerror.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\tinyxmlparser.cpp"
+"C:\Documents and Settings\Owner\Desktop\cal3d-0.11.0\src\cal3d\vector.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP34.tmp" 
+Creating temporary file "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP35.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:".\Debug\cal3d.pdb" /debug /machine:I386 /out:"..\..\bin\Debug\cal3d_d.dll" /implib:"..\..\bin\Debug/cal3d_d.lib" /pdbtype:sept 
+".\Debug\animation.obj"
+".\Debug\animation_action.obj"
+".\Debug\animation_cycle.obj"
+".\Debug\bone.obj"
+".\Debug\buffersource.obj"
+".\Debug\cal3d_wrapper.obj"
+".\Debug\coreanimation.obj"
+".\Debug\corebone.obj"
+".\Debug\corekeyframe.obj"
+".\Debug\corematerial.obj"
+".\Debug\coremesh.obj"
+".\Debug\coremodel.obj"
+".\Debug\coremorphanimation.obj"
+".\Debug\coreskeleton.obj"
+".\Debug\coresubmesh.obj"
+".\Debug\coresubmorphtarget.obj"
+".\Debug\coretrack.obj"
+".\Debug\error.obj"
+".\Debug\global.obj"
+".\Debug\hardwaremodel.obj"
+".\Debug\loader.obj"
+".\Debug\matrix.obj"
+".\Debug\mesh.obj"
+".\Debug\mixer.obj"
+".\Debug\model.obj"
+".\Debug\morphtargetmixer.obj"
+".\Debug\physique.obj"
+".\Debug\platform.obj"
+".\Debug\quaternion.obj"
+".\Debug\renderer.obj"
+".\Debug\saver.obj"
+".\Debug\skeleton.obj"
+".\Debug\springsystem.obj"
+".\Debug\streamsource.obj"
+".\Debug\submesh.obj"
+".\Debug\tinyxml.obj"
+".\Debug\tinyxmlerror.obj"
+".\Debug\tinyxmlparser.obj"
+".\Debug\vector.obj"
+".\Debug\cal3d.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP35.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+animation.cpp
+animation_action.cpp
+animation_cycle.cpp
+bone.cpp
+buffersource.cpp
+cal3d_wrapper.cpp
+c:\documents and settings\owner\desktop\cal3d-0.11.0\src\cal3d\cal3d_wrapper.cpp(1023) : warning C4800: 'enum Boolean' : forcing value to bool 'true' or 'false' (performance warning)
+coreanimation.cpp
+corebone.cpp
+corekeyframe.cpp
+corematerial.cpp
+coremesh.cpp
+coremodel.cpp
+coremorphanimation.cpp
+coreskeleton.cpp
+coresubmesh.cpp
+coresubmorphtarget.cpp
+coretrack.cpp
+error.cpp
+global.cpp
+hardwaremodel.cpp
+Generating Code...
+Compiling...
+loader.cpp
+matrix.cpp
+mesh.cpp
+mixer.cpp
+model.cpp
+morphtargetmixer.cpp
+physique.cpp
+platform.cpp
+quaternion.cpp
+renderer.cpp
+saver.cpp
+skeleton.cpp
+springsystem.cpp
+streamsource.cpp
+submesh.cpp
+tinyxml.cpp
+tinyxmlerror.cpp
+tinyxmlparser.cpp
+vector.cpp
+Generating Code...
+Linking...
+   Creating library ..\..\bin\Debug/cal3d_d.lib and object ..\..\bin\Debug/cal3d_d.exp
+
+
+
+<h3>Results</h3>
+cal3d_d.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,22 @@
+//interpolants
+varying vec4 vertex_position;
+
+//samplers
+
+void main(void)
+{
+	//get the depth by perspective divide, and covert to 0 - 1 range
+	float depth = vertex_position.z / vertex_position.w;
+	depth = (depth * 0.5) + 0.5; 
+	
+	//store depth and depth squared in the texture
+	float moment1 = depth;
+	float moment2 = depth * depth;
+	
+	//use dfdx and dfdy to calculate partial derivitives of adjacent pixels
+	float dx = dFdx(depth);
+	float dy = dFdy(depth);
+	moment2 += 0.25 * (dx*dx + dy*dy);
+
+	gl_FragColor = vec4(moment1,moment2,0.0,1.0);
+}

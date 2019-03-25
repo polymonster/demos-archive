@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/gaussian
+END
+gaussianV.vert
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/gaussian/gaussianV.vert
+END
+gaussian.glsl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/gaussian/gaussian.glsl
+END
+gaussianF.frag
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/gaussian/gaussianF.frag
+END

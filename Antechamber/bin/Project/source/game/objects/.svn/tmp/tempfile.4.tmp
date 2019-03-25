@@ -1,0 +1,832 @@
+/****************************************
+/	Al (c) 2008 - level.cpp
+/****************************************
+/	Draw 2D level
+/****************************************/
+
+
+/*************** INCLUDES ***************/
+
+#include "d3dapp.h"
+#include "d3dtex.h"
+#include "dappinput.h"
+#include "paths.h"
+
+#include "level.h"
+#include "soundManager.h"
+
+
+/*************** CONSTANTS **************/
+
+
+
+/*********** GLOBAL VARIABLES ***********/
+
+LPDIRECT3DVERTEXBUFFER9		g_level_buffer	= NULL;
+
+Level	*g_level_p;
+
+/********* FUNCTION DEFINITIONS *********/
+
+Level::Level() {}
+
+Level::Level( char *tileset_p, char *map_filename_p, int origin_y, int size, int tiles, bool editor ) :
+	m_current_map_x( 127 ),
+	m_current_map_y( 127 ),
+	m_tile_size( size ),
+	m_edit_mode( editor ),
+	m_edit_cursor( 1 ),
+	m_edit_cursor_p( NULL ),
+	m_hard_tileset_handle( -1 ),
+	m_soft_tileset_handle( -1 ),
+	m_num_tex_tiles( tiles ),
+	m_origin_y( origin_y ),
+	m_tilemap_p( m_tilemap ),
+	m_mapdata_p( NULL ),
+	m_col( 0xffffffff )
+{
+
+	char fullpath[64];
+	sprintf( fullpath, "%s%s.tga", PATH_TILESETS, tileset_p );
+	m_tileset = load_d3d_texture( fullpath );
+
+	// load map file
+	char data_filename[64];
+	sprintf( data_filename, "data\\levels\\%s.hmp", map_filename_p );
+	FILE *mapfile_p = fopen( data_filename, "rb" );
+
+	int filelen = 0;
+	while( !feof( mapfile_p ) )
+	{
+		fgetc( mapfile_p );
+		filelen++;
+	}
+
+	rewind( mapfile_p );
+
+	m_mapdata_p = new byte[(filelen+8)];
+	size_t found = fread( m_mapdata_p, 1, sizeof( byte ) * filelen, mapfile_p );
+
+	fclose( mapfile_p );
+
+	// load up the first level
+	set_new_map( MAP_SCROLL_NONE );
+
+	if( m_edit_mode )
+	{
+		// create some tileset panels for selecting texture frames
+		float wh = size * size;
+		Quad *fghard_tileset_edit_p = new Quad( PATH_TILESETS, tileset_p, g_window_w - wh, origin_y+(MAP_HEIGHT*size)+size, wh, wh/2.0f );
+		Quad *fgsoft_tileset_edit_p = new Quad( PATH_TILESETS, tileset_p, g_window_w - (wh*2.0f), origin_y+(MAP_HEIGHT*size)+size, wh, wh/2.0f );
+
+		fghard_tileset_edit_p->set_texcoords( 0.0f, 1.0f, 0.0f, 0.5f );
+		fgsoft_tileset_edit_p->set_texcoords( 0.0f, 1.0f, 0.5f, 1.0f );
+
+		m_hard_tileset_handle = fghard_tileset_edit_p->get_handle();
+		m_soft_tileset_handle = fgsoft_tileset_edit_p->get_handle();
+
+		// create tile mapping cursor at mouse position
+		int mx, my;
+		get_mouse_pos( mx, my );
+		m_edit_cursor_p = new Quad( PATH_TILESETS, tileset_p, mx, my, 16, 16 );
+
+		// read correct UVs for m_edit_cursor index
+		int tiles_per_row = (int)sqrtf( (float)m_num_tex_tiles );
+		float uvsize = 1.0f / (float)tiles_per_row;
+		float pos = ( (float)(m_edit_cursor-1) / (float)tiles_per_row );
+		float v = (int)pos * uvsize;
+		float u = pos - (int)pos;
+		m_edit_cursor_p->set_texcoords( u, u + uvsize, v, v + uvsize );
+	}
+
+	init_objects();
+
+	g_d3d_device->SetVertexShader( NULL );
+
+	int verts = ( ( MAP_WIDTH * 4 ) * MAP_HEIGHT ) + ( 4 * MAP_HEIGHT );
+    // create a vertex buffer interface
+    g_d3d_device->CreateVertexBuffer( verts * sizeof( level_vert_s ), 0, CUSTOM_STRIP_FVF, D3DPOOL_MANAGED, &g_level_buffer, NULL );
+
+	set_slope_formulas();
+
+	sprintf( fullpath, "%s%s.tga", PATH_SPRITES, "bullet" );
+	m_projectile_tex[0] = load_d3d_texture( fullpath );
+	sprintf( fullpath, "%s%s.tga", PATH_SPRITES, "missile" );
+	m_projectile_tex[1] = load_d3d_texture( fullpath );
+	sprintf( fullpath, "%s%s.tga", PATH_SPRITES, "lazer" );
+	m_projectile_tex[2] = load_d3d_texture( fullpath );
+
+}
+
+void Level::init_objects()
+{
+	//This is a messy function to be replace by the editor (Y)
+	m_number_of_turrets = 5;
+	m_number_of_gates = 2;
+	m_number_of_control_panels = 2;
+
+	vector2 pos;
+	vector2 sizew;
+
+	pos.x = 355;
+	pos.y = 148;
+
+	sizew.x = 100;
+	sizew.y = 10;
+
+	m_blockers = new Blocker*[m_number_of_gates];
+	m_blockers[0] = new Blocker(pos,sizew,BRIDGE,"door");
+
+	pos.x = 260;
+	pos.y = 160;
+
+	sizew.x = 10;
+	sizew.y = 120;
+
+	m_blockers[1] = new Blocker(pos,sizew,DOOR,"door");
+
+	pos.x = 375;
+	pos.y = 290;
+
+	m_control_panels = new ControlPanel*[m_number_of_control_panels];
+	m_control_panels[0] = new ControlPanel(pos,1,"door");
+
+	pos.x = 420;
+	pos.y = 220;
+	m_control_panels[1] = new ControlPanel(pos,0,"door");
+
+	pos.x = 0;
+	pos.y = 0;
+
+	sizew.x = 0;
+	sizew.y = 0;
+
+	for(int i = 0; i < MAX_PROJECTILES; i++)
+	{
+		m_projectile[i] = new Projectile(pos,sizew,1,"missile");
+	}
+
+	for(int i = 0; i < MAX_PARTICLES; i++)
+	{
+		m_particle[i] = new Particle(pos,"smoke");
+	}
+
+	m_turrets = new Turret*[m_number_of_turrets];
+
+	pos.x = 290;
+	pos.y = 240;
+	m_turrets[0] = new Turret(pos,2,0,0,60,"turret");
+
+	pos.x += 20;
+	pos.y = 210;
+	m_turrets[1] = new Turret(pos,2,1,2,60,"turret");
+
+	pos.x += 20;
+	m_turrets[2] = new Turret(pos,2,2,0,60,"turret");
+
+	pos.x += 20;
+	m_turrets[3] = new Turret(pos,2,3,1,60,"turret");
+	
+	pos.x = 530;
+	pos.y = 130;
+	m_turrets[4] = new Turret(pos,2,2,2,50,"turret");
+
+	m_number_of_collectables = 10;
+
+	m_collectables = new Collectable*[m_number_of_collectables];
+
+	pos.x = 35;
+	pos.y = 203;
+	m_collectables[0] = new Collectable(pos,1,"collectable");
+
+	pos.x = 59;
+	pos.y = 156;
+	m_collectables[1] = new Collectable(pos,1,"collectable");
+
+	pos.x = 97;
+	pos.y = 179;
+	m_collectables[2] = new Collectable(pos,1,"collectable");
+
+	pos.x = 140;
+	pos.y = 162;
+	m_collectables[3] = new Collectable(pos,1,"collectable");
+
+	pos.x = 161;
+	pos.y = 138;
+	m_collectables[4] = new Collectable(pos,1,"collectable");
+
+	pos.x = 235;
+	pos.y = 138;
+	m_collectables[5] = new Collectable(pos,2,"collectable");
+
+	pos.x = 277;
+	pos.y = 140;
+	m_collectables[6] = new Collectable(pos,2,"collectable");
+
+	pos.x = 350;
+	pos.y = 125;
+	m_collectables[7] = new Collectable(pos,2,"collectable");
+
+	pos.x = 582;
+	pos.y = 183;
+	m_collectables[8] = new Collectable(pos,2,"collectable");
+
+	pos.x = 563;
+	pos.y = 346;
+	m_collectables[9] = new Collectable(pos,2,"collectable");
+
+	m_number_of_traps = 2;
+
+	m_traps = new Trap *[m_number_of_traps];
+	pos.y = 100;
+
+	vector2 range;
+	range.x = 1;
+	range.y = 5;
+
+	vector2 speed;
+	speed.x = 5;
+	speed.y = 3;
+
+	m_traps[0] = new Trap(pos,1,range,speed,"trap");
+
+	pos.x = 108;
+	pos.y = 334;
+
+	range.x = 1;
+	range.y = 5;
+
+	speed.x = 5;
+	speed.y = 3;
+
+	m_traps[1] = new Trap(pos,-1,range,speed,"trap");
+}
+
+
+Level::~Level()
+{
+	if( m_mapdata_p )
+		delete []m_mapdata_p;
+
+	for( int i = 0; i < 3; i++ )
+		if( m_projectile_tex[i].texture )
+			m_projectile_tex[i].texture->Release();
+
+	m_tileset.texture->Release();
+
+	if( g_level_buffer )
+		g_level_buffer->Release();
+}
+
+void Level::spawn_particle(vector2 position)
+{
+	for(int i = 0; i < MAX_PARTICLES; i++)
+	{
+		if(!m_particle[i]->active())
+		{
+			m_particle[i]->spawn(position);
+			i = MAX_PARTICLES;
+		}
+	}
+}
+
+void Level::spawn_particle(vector2 position, int type)
+{
+	for(int i = 0; i < MAX_PARTICLES; i++)
+	{
+		if(!m_particle[i]->active())
+		{
+			CSound::getInstance()->play(3,1);
+			m_particle[i]->spawn(position,type);
+			i = MAX_PARTICLES;
+		}
+	}
+}
+
+
+void Level::execute( void )
+{
+	//HERE WE NEED TO CHECK IF WE NEED TO SPAWN A NEW PROJECTILES
+	vector2 pos;
+	vector2 dir;
+
+	for(int i = 0; i < m_number_of_turrets; i++)
+	{
+		int res = m_turrets[i]->shoot(&pos, &dir);
+
+		if(res != -1)
+		{
+			for(int j = 0; j < MAX_PROJECTILES; j++)
+			{
+				if(!m_projectile[j]->active()) 
+				{
+					CSound::getInstance()->play(0,0);
+					m_projectile[j]->spawn(pos,dir,res);
+					j = MAX_PROJECTILES;
+				}
+			}
+		}
+	}
+
+	//HERE WE CHECK TO SPAWN PARTICLES FOR THE MISSILE "TAILS"
+	for(int i = 0; i < MAX_PROJECTILES; i++)
+	{
+		if(m_projectile[i]->active()) 
+		{
+			if(m_projectile[i]->emmit_particle())
+			{
+				for(int j = 0; j < MAX_PARTICLES; j++)
+				{
+					if(!m_particle[j]->active())
+					{
+						m_particle[j]->spawn(m_projectile[i]->particle_pos());
+						j = MAX_PARTICLES;
+					}
+				}
+			}
+		}
+	}
+
+	if( m_edit_mode )
+	{
+		if( m_edit_cursor_p )
+		{
+			int mx, my;
+			get_mouse_pos( mx, my );
+
+			if( my > MAP_HEIGHT * m_tile_size - 5 )
+				m_edit_cursor_p->m_hide = true;
+			else
+				m_edit_cursor_p->m_hide = false;
+
+			int x = mx / m_tile_size;
+			int y = my / m_tile_size;
+			m_edit_cursor_p->set_pos( x * m_tile_size, y * m_tile_size );
+
+			if( !m_edit_cursor_p->m_hide )
+			{
+				int index = x + ( y * MAP_WIDTH );
+				if( mouse_button_down( 0 ) )
+				{
+					m_tilemap_p[index] = m_edit_cursor;
+				}
+				else
+				if( mouse_button_down( 1 ) )
+				{
+					m_tilemap_p[index] = 0;
+				}
+			}
+			else
+			{
+				if( mouse_button_click( 0 ) )
+				{
+					Quad *hard_set_p = (Quad *)g_object_list_p->get_obj( m_hard_tileset_handle );
+					Quad *soft_set_p = (Quad *)g_object_list_p->get_obj( m_soft_tileset_handle );
+
+					vector2 h_pos = hard_set_p->get_pos();
+					vector2 h_size = hard_set_p->get_size();
+					if( mx > h_pos.x && my > h_pos.y && mx < h_pos.x + h_size.x && my < h_pos.y + h_size.y )
+					{
+						int idx = ( mx - h_pos.x ) / m_tile_size;
+						int idy = ( my - h_pos.y ) / m_tile_size;
+						m_edit_cursor = idx + ( idy * m_tile_size ) + 1;
+					}
+					else
+					{
+						vector2 h_pos = soft_set_p->get_pos();
+						vector2 h_size = hard_set_p->get_size();
+						if( mx > h_pos.x && my > h_pos.y && mx < h_pos.x + h_size.x && my < h_pos.y + h_size.y )
+						{
+							int idx = ( mx - h_pos.x ) / m_tile_size;
+							int idy = ( my - h_pos.y ) / m_tile_size;
+							m_edit_cursor = idx + ( idy * m_tile_size ) + 129;
+						}
+					}
+
+					// read correct UVs for m_edit_cursor index
+					int tiles_per_row = (int)sqrtf( (float)m_num_tex_tiles );
+					float uvsize = 1.0f / (float)tiles_per_row;
+					float pos = ( (float)(m_edit_cursor-1) / (float)tiles_per_row );
+					float v = (int)pos * uvsize;
+					float u = pos - (int)pos;
+					m_edit_cursor_p->set_texcoords( u, u + uvsize, v, v + uvsize );
+
+				}
+			}
+		}
+
+		if( key_hit( DIK_M ) )
+		{
+			// write out some test data
+			char data_filename[64];
+			sprintf( data_filename, "data\\levels\\map1.hmp" );
+			FILE *mapdata_handle_p = fopen( data_filename, "w" );
+
+			char loc[32];
+			sprintf( loc, "%c%d:%d%c", 255, m_current_map_x, m_current_map_y, 255 );
+			fwrite( (void *)loc, strlen( loc ), 1, mapdata_handle_p );
+
+			fwrite( (void *)m_tilemap, 640, 1, mapdata_handle_p );
+
+			fclose( mapdata_handle_p );
+
+			dbgmsg( "Map file saved\n" );
+		}
+	}
+
+}
+
+
+void Level::render( void )
+{
+	int num_prims = 0;
+
+	level_vert_s *vert_p = NULL;
+	level_vert_s *vertzero_p = vert_p;
+
+	int tiles_per_row = (int)sqrtf( (float)m_num_tex_tiles );
+	float uvsize = 1.0f / (float)tiles_per_row;
+
+	int num_tiles = MAP_WIDTH * MAP_HEIGHT;
+	int x, y;
+	x = y = 0;
+	float v0, v1, u0, u1;
+
+	int i = 0;
+	while( !m_tilemap_p[i] )
+		i++;
+
+	// set first position
+	set_vert_pos( x, y, i-1 );
+
+	m_col = 0xffffffff;
+
+    // lock buffer and load the vertices into it
+	g_level_buffer->Lock( 0, 0, (void**)&vert_p, 0 );
+
+	while( i < num_tiles )
+	{
+
+		int x_grid = (int)( (x+m_tile_size) / m_tile_size );
+		if( ( x_grid != MAP_WIDTH ) && m_tilemap_p[i] )
+		{
+			x += m_tile_size;
+
+			// first set of verts for quad
+
+			// set new UVs
+			v0 = ( ( m_tilemap_p[i]-1 ) / tiles_per_row ) * uvsize;
+			v1 = v0 + uvsize;
+			float upos = ( (float)( m_tilemap_p[i]-1 ) / (float)tiles_per_row );
+			u0 = ( upos - (int)upos );
+			u1 = u0 + uvsize;
+
+			set_vert( vert_p, x, y, u0, v0, 0 );
+			vert_p++;
+			set_vert( vert_p, x, y + m_tile_size, u0, v1, 0 );
+			vert_p++;
+
+			num_prims += 2;
+		}
+		else
+		{
+			// degens
+
+			// previous vert copy
+			set_vert( vert_p, x + m_tile_size, y + m_tile_size, u1, v1, 0 );
+			vert_p++;
+
+			// find the next vert, increment iterator
+			while( !m_tilemap_p[i] && i < num_tiles )
+				i++;
+
+			set_vert_pos( x, y, i );
+
+			// new vert copy
+			set_vert( vert_p, x, y, u0, v1, 0 );
+			vert_p++;
+
+			// set new UVs
+			v0 = ( ( m_tilemap_p[i]-1 ) / tiles_per_row ) * uvsize;
+			v1 = v0 + uvsize;
+			float upos = ( (float)( m_tilemap_p[i]-1 ) / (float)tiles_per_row );
+			u0 = ( upos - (int)upos );
+			u1 = u0 + uvsize;
+
+			set_vert( vert_p, x, y, u0, v0, 0 );
+			vert_p++;
+			set_vert( vert_p, x, y + m_tile_size, u0, v1, 0 );
+			vert_p++;
+
+			num_prims += 4;
+
+		}
+
+		// second pair in quad
+		set_vert( vert_p, x + m_tile_size, y, u1, v0, 0 );
+		vert_p++;
+		set_vert( vert_p, x + m_tile_size, y + m_tile_size, u1, v1, 0 );
+		vert_p++;
+
+		i++;
+
+		num_prims += 2;
+
+	}
+
+	g_level_buffer->Unlock();
+
+
+	g_d3d_device->SetTexture( 0, m_tileset.texture );
+
+	g_d3d_device->SetSamplerState(0, D3DSAMP_ADDRESSU, D3DTADDRESS_WRAP );
+	g_d3d_device->SetSamplerState(0, D3DSAMP_ADDRESSV, D3DTADDRESS_WRAP );
+
+	g_d3d_device->SetRenderState( D3DRS_LIGHTING, FALSE );
+	g_d3d_device->SetRenderState( D3DRS_ALPHABLENDENABLE, TRUE );
+	g_d3d_device->SetRenderState( D3DRS_SRCBLEND, D3DBLEND_SRCALPHA );
+	g_d3d_device->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_INVSRCALPHA );
+	g_d3d_device->SetTextureStageState( 0, D3DTSS_ALPHAOP, D3DTOP_MODULATE );
+
+	g_d3d_device->SetRenderState( D3DRS_CULLMODE, D3DCULL_CW );
+
+	g_d3d_device->SetStreamSource( 0, g_level_buffer, 0, sizeof( level_vert_s ) );
+	g_d3d_device->SetFVF( CUSTOM_STRIP_FVF );
+
+	// copy the vertex buffer to the back buffer
+	g_d3d_device->DrawPrimitive( D3DPT_TRIANGLESTRIP, 0, num_prims );
+
+	//*********************************************************************//
+	//render these objects **they render with out this but wasnt sure on how
+	//to order them correctly (they were drawing behind)
+
+	for(int i = 0; i < MAX_PARTICLES; i++)
+	{
+		m_particle[i]->render();
+	}
+
+	for(int i = 0; i < MAX_PROJECTILES; i++)
+	{
+		m_projectile[i]->render();
+	}
+
+	for(int i = 0; i < m_number_of_turrets; i++)
+	{
+		m_turrets[i]->render();
+	}
+
+	for(int i = 0; i < m_number_of_collectables; i++)
+	{
+		m_collectables[i]->render();
+	}
+
+	for(int i = 0; i < m_number_of_traps; i++)
+	{
+		m_traps[i]->render();
+	}
+}
+
+
+void Level::set_vert( level_vert_s *fvf_struct_p, int x, int y, float u, float v, int iterator )
+{
+	fvf_struct_p[iterator].x	= (float)x;
+	fvf_struct_p[iterator].y	= (float)y;
+	fvf_struct_p[iterator].z	= 0.0f;
+	fvf_struct_p[iterator].rhw	= 1.0f;
+	fvf_struct_p[iterator].col	= m_col;
+	fvf_struct_p[iterator].u	= u;
+	fvf_struct_p[iterator].v	= v;
+}
+
+void Level::set_vert_pos( int &x, int &y, int tile )
+{
+	int idx = tile;
+	int idy = 0;
+	while( idx >= MAP_WIDTH )
+	{
+		idx -= MAP_WIDTH;
+		idy++;
+	}
+	x = m_tile_size * idx;
+	y = m_origin_y + ( m_tile_size * idy );
+}
+
+
+void Level::set_new_map( int scroll_dir )
+{
+	int new_map_y = m_current_map_y;
+	int new_map_x = m_current_map_x;
+
+	// set new map location
+	if( scroll_dir != -1 )
+	{
+		scroll_dir > MAP_SCROLL_RIGHT ?
+			( scroll_dir == MAP_SCROLL_UP ? new_map_y-- : new_map_y++ ) :
+			( scroll_dir == MAP_SCROLL_LEFT ? new_map_x-- : new_map_x++ );
+	}
+
+	char map_buf[32];
+	char mapx[8];
+	char mapy[8];
+	int info_id = 0;
+	int len = 0;
+	bool found = false;
+
+	// point to map data
+	byte *mapread_p = m_mapdata_p;
+
+	// point to end of the last header in the map file
+	char *eoh_p = strrchr( (char *)m_mapdata_p, 255 );
+
+	while( (char *)mapread_p != (eoh_p+1) )
+	{
+		len = 1;
+		// get the length of this map info
+		while( *(mapread_p+len) != 255 )
+			len++;
+
+		// get the current map info
+		strncpy( map_buf, (char *)mapread_p, len+1 );
+		map_buf[len+1] = 0;
+		char *map_p = map_buf+1;
+		
+		// get coordinates
+		int len2 = 0;
+		while( map_p[len2] != ':' )
+		{
+			mapx[len2] = map_p[len2];
+			len2++;
+		}
+		mapx[len2] = 0;
+		map_p += len2+1;
+		len2 = 0;
+		while( map_p[len2] != -1 )
+		{
+			mapy[len2] = map_p[len2];
+			len2++;
+		}
+		mapy[len2] = 0;
+
+		// coords match the map we are looking for
+		if( atoi( mapx ) == new_map_x && atoi( mapy ) == new_map_y )
+		{
+			found = true;
+			m_current_map_y = new_map_y;
+			m_current_map_x = new_map_x;
+			// read in map data
+			char *mapinfo_p = (eoh_p+(info_id*640)+1);
+			memcpy( (char *)&m_tilemap, mapinfo_p, 640 );
+
+			// ----- LOAD MAP ELEMENTS -----
+
+
+
+
+
+
+
+			// -----------------------------
+
+		}
+
+		// keep looking for a match?
+		if( !found )
+		{
+			mapread_p += len+1;
+			info_id++;
+		}
+		else
+			break;
+
+	}
+
+}
+
+int Level::get_grid_x( int pos )
+{
+	return( (int)( pos / m_tile_size ) );
+}
+
+int Level::get_grid_y( int pos )
+{
+	return( (int)( ( pos - (float)m_origin_y ) / m_tile_size ) );
+}
+
+int Level::hit_collidable_tile	( int tile	)
+{ 
+	if(tile == 0) return 0;
+	else if(tile < 17) return 1;
+	else if(tile > 16 && tile < 36) return 2;
+	else if(tile >= 36 && tile <= 42) return 3;
+	else return 0;
+}
+
+void Level::obtainGates(vector2 *position, vector2 *dimensions,int id)
+{
+	*position = m_blockers[id]->get_pos();
+	*dimensions = m_blockers[id]->get_size();
+}
+
+void Level::useControlPanel(int id)
+{
+	int gate_id;
+
+	if(m_control_panels[id]->activate(&gate_id))
+	{
+		m_blockers[gate_id]->activate();
+	}	
+}
+
+void Level::obtainControlPanels(vector2 *position, vector2 *dimensions,int id)
+{
+	*position = m_control_panels[id]->get_pos();
+	*dimensions = m_control_panels[id]->get_size();
+}
+
+void Level::notify_player_position (vector2 position)
+{
+	for(int i = 0; i < m_number_of_turrets; i++)
+	{
+		m_turrets[i]->notify_player_position(position);
+	}
+
+	for(int i = 0; i < m_number_of_traps; i++)
+	{
+		m_traps[i]->notify_player_position(position);
+	}
+
+	for(int i = 0; i < MAX_PROJECTILES; i++)
+	{
+		if(m_projectile[i]->active())
+		{
+			m_projectile[i]->notify_player_position(position);
+		}
+	}
+}
+
+int Level::collectableCollision(vector2 min_extent, vector2 max_extent)
+{
+	for(int i = 0; i < m_number_of_collectables; i++)
+	{
+		if(m_collectables[i]->active())
+		{
+			vector2 pos = m_collectables[i]->get_pos();
+			vector2 size = m_collectables[i]->get_size();
+
+			//top left
+			if(pos.x > min_extent.x && pos.x < max_extent.x 
+				&& pos.y > min_extent.y && pos.y < max_extent.y)
+			{
+				m_collectables[i]->collect();
+				return m_collectables[i]->type();
+			}
+
+			//top right
+			if(pos.x + size.x > min_extent.x && pos.x + size.x < max_extent.x 
+				&& pos.y > min_extent.y && pos.y < max_extent.y)
+			{
+				m_collectables[i]->collect();
+				return m_collectables[i]->type();
+			}
+
+			//bottom right
+			if(pos.x + size.x > min_extent.x && pos.x + size.x < max_extent.x 
+				&& pos.y + size.y > min_extent.y && pos.y + size.y < max_extent.y)
+			{
+				m_collectables[i]->collect();
+				return m_collectables[i]->type();
+			}
+
+			//bottom left
+			if(pos.x > min_extent.x && pos.x < max_extent.x 
+				&& pos.y + size.y > min_extent.y && pos.y + size.y < max_extent.y)
+			{
+				m_collectables[i]->collect();
+				return m_collectables[i]->type();
+			}
+		}
+	}
+
+	return 0;
+
+}
+
+bool Level::projectileCollision(vector2 min_extent, vector2 max_extent)
+{
+	for(int i = 0; i < MAX_PROJECTILES; i++)
+	{
+		if(m_projectile[i]->active())
+		{
+			vector2 pos = m_projectile[i]->get_pos();
+
+			if(pos.x > min_extent.x && pos.x < max_extent.x 
+				&& pos.y > min_extent.y && pos.y < max_extent.y)
+			{
+				m_projectile[i]->kill();
+				return true;
+			}
+		}
+	}
+
+	return false;
+}

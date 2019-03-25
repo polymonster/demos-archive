@@ -1,0 +1,199 @@
+#include "projectile.h"
+#include "dappinput.h"
+#include "d3dapp.h"
+
+Projectile::Projectile()
+{
+
+}
+
+Projectile::Projectile(vector2 position, vector2 direction, int type, char *name_p) :
+	Quad(PATH_SPRITES,name_p,position.x,position.y,4,4,0xffffffff)
+{
+	m_direction_vector = direction;
+	m_active = false;
+	m_life = 0;
+	m_type = type;
+	m_turning_circle = 0.25;
+}
+
+Projectile::~Projectile()
+{
+
+}
+
+void Projectile::execute( void )
+{
+	if(m_active)
+	{
+		if(m_type == 0)
+		{
+			m_pos.x += m_direction_vector.x;
+			m_pos.y += m_direction_vector.y;
+		}
+		else if(m_type == 1)
+		{
+			vector2 new_direction_vector;
+			new_direction_vector.y = m_player_position.y - m_pos.y;
+			new_direction_vector.x = m_player_position.x - m_pos.x;
+
+			//normalise it
+			float magnitude = (float) sqrt((new_direction_vector.x * new_direction_vector.x) + (new_direction_vector.y * new_direction_vector.y));
+			new_direction_vector.x /= magnitude;
+			new_direction_vector.y /= magnitude;
+
+			//interpolate the rotation
+			if(m_direction_vector.x != new_direction_vector.x)
+			{
+				if(m_direction_vector.x  < new_direction_vector.x)
+				{
+					m_direction_vector.x += 0.01;
+				}
+				else if(m_direction_vector.x > new_direction_vector.x)
+				{
+					m_direction_vector.x -= 0.01;
+				}
+			}
+
+			if(m_direction_vector.y != new_direction_vector.y)
+			{
+				if(m_direction_vector.y  < new_direction_vector.y)
+				{
+					m_direction_vector.y += 0.01;
+				}
+				else if(m_direction_vector.y > new_direction_vector.y)
+				{
+					m_direction_vector.y -= 0.01;
+				}
+			}
+	
+			m_pos.x += m_direction_vector.x;
+			m_pos.y += m_direction_vector.y;
+		}
+
+		Quad::execute();
+
+		//m_life -= g_scene_p->m_game_time;
+
+		checkCollisions();
+	}
+	else
+	{
+		Quad::m_hide = true;
+	}
+
+	if(m_life <= 0) m_active = false;
+}
+
+
+void Projectile::render( void )
+{
+	if(m_active) Quad::render();
+}
+
+void Projectile::spawn(vector2 position, vector2 direction)
+{
+	m_pos = position;
+	m_direction_vector = direction;
+	m_active = true;
+	Quad::m_hide = false;
+	m_life = 5;
+}
+
+void Projectile::checkCollisions( void )
+{
+	//get necessary level info we need
+	int tile_size = g_level_p->get_tile_size();
+	int level_width = g_level_p->get_map_width();
+	int level_x;
+	int level_y;
+	int tile_id;
+
+	potential_collider_s potential_collider;
+
+	if(m_pos.x > 0 && m_pos.y > 0)
+	{
+		int m_origin = ( !g_editor_mode ? (int)( ( (float)g_window_h - 256.0f ) * 0.5f ) : 0 );;
+
+		level_x = g_level_p->get_grid_x( m_pos.x );
+		level_y = g_level_p->get_grid_y( m_pos.y );
+
+		potential_collider_s potential_collider;
+
+		potential_collider.id = level_x + (level_y * level_width); 
+		potential_collider.start.x = level_x * tile_size;
+		potential_collider.start.y = level_y * tile_size + m_origin;
+		potential_collider.end.x = level_x * tile_size + tile_size;
+		potential_collider.end.y = level_y * tile_size + m_origin + tile_size;
+
+		int id = level_x + (level_y * level_width); 
+		
+		tile_id = g_level_p->get_tile( id );
+
+		if( g_level_p->hit_collidable_tile( tile_id ) == 1)
+		{
+			m_active = false;
+		}
+
+		if( g_level_p->hit_collidable_tile( tile_id ) == 2)
+		{
+			int slope_formula_index = tile_id - 17;
+
+			float m = slope_formula[slope_formula_index].m;
+			float c = slope_formula[slope_formula_index].c_ratio * tile_size;
+
+			float x = m_pos.x - potential_collider.end.x;
+			float base = potential_collider.end.y - m_size.y;
+
+			float eqr = m * x + c;
+			float slope_pos = base - eqr;
+			
+			if(m_pos.y > slope_pos) 
+			{
+				m_active = false;
+			}
+		}
+
+		if( g_level_p->hit_collidable_tile( tile_id ) == 3)
+		{
+			//check
+			int slope_formula_index = tile_id - 17;
+
+			float m = slope_formula[slope_formula_index].m;
+			float c = slope_formula[slope_formula_index].c_ratio * tile_size;
+
+			float x = m_pos.x - potential_collider.end.x;
+			float top = potential_collider.start.y;
+
+			float eqr = m * x + c;
+			float slope_pos = top - eqr;
+			
+			if(m_pos.y < slope_pos) 
+			{
+				m_active = false;
+			}
+		}
+	}
+
+	int number_of_gates = g_level_p->number_of_gates();
+
+	for(int i = 0; i < number_of_gates; i++)
+	{
+		vector2 gatePos;
+		vector2 gateSize;
+
+		g_level_p->obtainGates(&gatePos,&gateSize,i);
+
+		if(m_pos.x > gatePos.x && m_pos.x < gatePos.x + gateSize.x
+			&& m_pos.y > gatePos.y && m_pos.y < gatePos.y + gateSize.y)
+		{
+			m_active = false;
+		}
+
+	}
+}
+
+void Projectile::notify_player_position(vector2 position)
+{
+	m_player_position = position;
+}

@@ -1,0 +1,3 @@
+shader_config
+vertex motion_blur/motion_blurV.vert
+fragment motion_blur/motion_blurF.frag

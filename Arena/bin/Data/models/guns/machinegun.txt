@@ -1,0 +1,8 @@
+model: machinegun
+modeldir: data/models/guns/machinegun
+range: 4000
+fireRate: 0.1
+fireTimer: 0
+bulletSpeed: 95
+shotType: 0
+damage: 4

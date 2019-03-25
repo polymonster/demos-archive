@@ -1,0 +1,7 @@
+name sunset
+front data\texture\skyboxes\sunset_north.tga
+back data\texture\skyboxes\sunset_south.tga
+left data\texture\skyboxes\sunset_west.tga
+right data\texture\skyboxes\sunset_east.tga
+top data\texture\skyboxes\sunset_up.tga
+bottom data\texture\skyboxes\sunset_down.tga

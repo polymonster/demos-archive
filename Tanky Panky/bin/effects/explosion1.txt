@@ -1,0 +1,19 @@
+# config for an explosion
+
+color 255 200 200 200
+speed 10
+acceleration 0.7
+duration 1
+falloff 180
+minsize 0.2
+maxsize 0.8
+expansionrate -0.2
+gravity -4
+rdrift 3
+drag 0
+dragdir 0 1 0
+minparticles 25
+maxparticles 50
+billboarded true
+rforce 700
+hemspread 0.7

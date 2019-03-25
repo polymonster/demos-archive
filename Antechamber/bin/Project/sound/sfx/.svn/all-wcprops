@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/hadron2dcwk1/!svn/ver/273/2DCwk1/sound/sfx
+END
+DEATH.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/hadron2dcwk1/!svn/ver/264/2DCwk1/sound/sfx/DEATH.WAV
+END
+COLLECT.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/COLLECT.WAV
+END
+STOP.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/STOP.WAV
+END
+BULLET.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/BULLET.WAV
+END
+JUMP1.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/hadron2dcwk1/!svn/ver/273/2DCwk1/sound/sfx/JUMP1.WAV
+END
+INMOTION.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/INMOTION.WAV
+END
+JUMP2.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/hadron2dcwk1/!svn/ver/273/2DCwk1/sound/sfx/JUMP2.WAV
+END
+START.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/START.WAV
+END
+SAVE.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/hadron2dcwk1/!svn/ver/273/2DCwk1/sound/sfx/SAVE.WAV
+END
+EXPLODE.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/EXPLODE.WAV
+END
+ACTIVATE.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/ACTIVATE.WAV
+END
+OPEN.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/OPEN.WAV
+END
+BEAM.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/BEAM.WAV
+END
+CLOSE.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/CLOSE.WAV
+END
+MISSILE.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/MISSILE.WAV
+END
+INTERACT.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/hadron2dcwk1/!svn/ver/264/2DCwk1/sound/sfx/INTERACT.WAV
+END
+JUMPLAND.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/hadron2dcwk1/!svn/ver/264/2DCwk1/sound/sfx/JUMPLAND.WAV
+END
+LAZER.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/LAZER.WAV
+END
+RESPAWN.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/hadron2dcwk1/!svn/ver/264/2DCwk1/sound/sfx/RESPAWN.WAV
+END
+HUMANERR.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/HUMANERR.WAV
+END
+EXPLODE2.WAV
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/hadron2dcwk1/!svn/ver/184/2DCwk1/sound/sfx/EXPLODE2.WAV
+END

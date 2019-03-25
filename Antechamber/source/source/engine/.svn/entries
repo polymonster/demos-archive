@@ -1,0 +1,46 @@
+9
+
+dir
+428
+http://svn.assembla.com/svn/hadron2dcwk1/2DCwk1/source/engine
+http://svn.assembla.com/svn/hadron2dcwk1
+
+
+
+2009-02-08T20:27:14.013036Z
+412
+polymonster
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e0e46c49-be69-4f5a-ad62-21024a331aea
+
+sound
+dir
+
+objects
+dir
+
+dx
+dir
+
+misc
+dir
+
+draw
+dir
+
+managers
+dir
+

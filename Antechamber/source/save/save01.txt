@@ -1,0 +1,4 @@
+position : 29.0684 , 281
+map : 127 , 127
+score : 0
+lives : 5

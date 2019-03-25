@@ -1,0 +1,3 @@
+shader_config
+vertex depth_peel/depth_peel_initialV.vert
+fragment depth_peel/depth_peel_initialF.frag

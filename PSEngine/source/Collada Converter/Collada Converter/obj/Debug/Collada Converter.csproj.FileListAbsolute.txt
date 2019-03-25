@@ -1,0 +1,8 @@
+G:\PolySpoon\Collada Converter\Collada Converter\bin\Debug\Collada Converter.exe
+G:\PolySpoon\Collada Converter\Collada Converter\bin\Debug\Collada Converter.pdb
+G:\PolySpoon\Collada Converter\Collada Converter\obj\Debug\ResolveAssemblyReference.cache
+G:\PolySpoon\Collada Converter\Collada Converter\obj\Debug\Collada_Converter.Properties.Resources.resources
+G:\PolySpoon\Collada Converter\Collada Converter\obj\Debug\Collada Converter.csproj.GenerateResource.Cache
+G:\PolySpoon\Collada Converter\Collada Converter\obj\Debug\Collada Converter.exe
+G:\PolySpoon\Collada Converter\Collada Converter\obj\Debug\Collada Converter.pdb
+G:\PolySpoon\Collada Converter\Collada Converter\obj\Debug\Collada_Converter.MainForm.resources

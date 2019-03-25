@@ -1,0 +1,17 @@
+# config for tank muzzle flash effect
+
+color 200 200 200 200
+speed 0
+acceleration 1.0
+duration 0.03
+falloff 0
+minsize 1.4
+maxsize 1.5
+expansionrate 0.0
+gravity 0
+rdrift 0
+drag 0
+dragdir 0 0 0
+minparticles 1
+maxparticles 1
+billboarded false

@@ -1,0 +1,1 @@
+LDAsg.bmp

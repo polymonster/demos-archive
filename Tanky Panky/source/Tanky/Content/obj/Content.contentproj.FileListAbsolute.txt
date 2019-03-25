@@ -1,0 +1,3 @@
+K:\Current Code\Tanky Panky\Tanky\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\Current Code\CGT\TankyPanky\Tanky\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\Current Code\CGT\TankyPanky\Tanky\Content\obj\x86\Release\ResolveAssemblyReference.cache

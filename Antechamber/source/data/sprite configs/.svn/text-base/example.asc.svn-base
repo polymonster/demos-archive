@@ -1,0 +1,31 @@
+#player sprite config
+
+######################################
+#
+#help -
+#
+#number_of_states:	number of states for animation sprite. usage example [number_of_states n].
+#state_frames:		number of frames in a specific state. usage exmaple [state_frames STATE n].
+# available states are..
+#	STAND
+#	WALK
+#	DEATH
+#	JUMP
+#	INAIR
+#	LAND
+#	SAVE
+#	SPAWN
+#	DEATH2
+#	DEATH3
+#total_frames:		total number of frames followed by the sub-command, "for". usage example [total_frames n : for i : x y , for j : x y]
+#for:				takes a number of sizes to read in. separate each with a comma. usage example [for n : x y].
+#
+######################################
+
+number_of_states 3
+state_frames 0 1
+state_frames 1 8
+state_frames 2 2
+total_frames 11 : for 9 : 8 21 , for 2 : 20 20
+
+#end

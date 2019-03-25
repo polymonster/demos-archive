@@ -1,0 +1,68 @@
+//consts
+const int MAX_LIGHTS = 25;
+
+//samplers/
+uniform sampler2D normal_buffer;
+uniform sampler2D position_buffer;
+uniform sampler2D colour_buffer;
+uniform sampler2D shadow_map;
+
+varying vec2 tex_coord;
+
+uniform vec3 light_pos[MAX_LIGHTS];
+uniform vec3 light_diffuse[MAX_LIGHTS];
+uniform vec3 light_specular[MAX_LIGHTS];
+uniform int  number_of_lights;
+
+uniform vec3 camera_pos;
+
+uniform mat4 shadow_matrix;
+
+void main(void)
+{
+	vec3 position = texture2D(position_buffer,tex_coord).xyz;
+	vec3 normal = texture2D(normal_buffer,tex_coord).xyz;
+	vec4 diffuse_colour = texture2D(colour_buffer,tex_coord);
+	vec3 view_direction = normalize(camera_pos - position);
+	
+	vec4 final = vec4(0.0,0.0,0.0,1.0);
+	
+	//lighting components
+	for(int i = 0; i < number_of_lights; i++)
+	{
+		//setup light position and direction
+		vec3 light_direction = normalize(light_pos[i] - position);
+		float light_world_distance = length(light_pos[i] - position);
+
+		float n_dot_l = max( dot(normal, normalize(light_direction)), 0.0);
+		
+		if (n_dot_l > 0.0) 
+		{
+			float radius = 800.0;
+			float attenuation = max((radius - light_world_distance) / radius,0.0);
+						
+			//diffuse
+			final.xyz += attenuation * (light_diffuse[i] * diffuse_colour.xyz * gl_FrontMaterial.diffuse.xyz * n_dot_l);
+			
+			//specular
+			float n_dot_h = pow( clamp(dot(reflect(-light_direction.xyz, normal), view_direction), 0.0, 1.0), gl_FrontMaterial.shininess );
+			final.xyz += attenuation * light_specular[i] * gl_FrontMaterial.specular.xyz * n_dot_h * 1.0;
+		}
+	}
+	
+	
+	//test deferred shadows
+	vec4 homo_pos = vec4(position,1.0);
+	homo_pos = (homo_pos * shadow_matrix);
+	homo_pos /= homo_pos.w;
+	
+	float pixel_depth = homo_pos.z;
+	float shadow_map_depth = texture2D(shadow_map,homo_pos.xy).r;
+	
+	float shadowed = 1.0;
+	
+	if(pixel_depth > shadow_map_depth + 0.0001) shadowed = 0.3;
+	final *= shadowed;
+	
+	gl_FragColor = vec4(final.xyz,1.0);
+}

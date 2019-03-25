@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/hadron2dcwk1/!svn/ver/412/2DCwk1/source/engine/dx
+END
+d3dapp.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/hadron2dcwk1/!svn/ver/238/2DCwk1/source/engine/dx/d3dapp.h
+END
+d3dtex.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/hadron2dcwk1/!svn/ver/72/2DCwk1/source/engine/dx/d3dtex.h
+END
+dxio.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/hadron2dcwk1/!svn/ver/411/2DCwk1/source/engine/dx/dxio.cpp
+END
+dappinput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/hadron2dcwk1/!svn/ver/408/2DCwk1/source/engine/dx/dappinput.cpp
+END
+matrices.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/hadron2dcwk1/!svn/ver/1/2DCwk1/source/engine/dx/matrices.cpp
+END
+dxio.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/hadron2dcwk1/!svn/ver/72/2DCwk1/source/engine/dx/dxio.h
+END
+dappinput.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/hadron2dcwk1/!svn/ver/238/2DCwk1/source/engine/dx/dappinput.h
+END
+d3dapp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/hadron2dcwk1/!svn/ver/412/2DCwk1/source/engine/dx/d3dapp.cpp
+END
+d3dtex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/hadron2dcwk1/!svn/ver/72/2DCwk1/source/engine/dx/d3dtex.cpp
+END
+matrices.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/hadron2dcwk1/!svn/ver/1/2DCwk1/source/engine/dx/matrices.h
+END

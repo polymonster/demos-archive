@@ -1,0 +1,13 @@
+model: railgun
+modeldir: data/models/guns/railgun
+range: 6000
+fireRate: 0.7
+fireTimer: 0
+bulletSpeed: 120
+reloadRate: 3
+clipSize: 2
+maxClips: 5
+pickup: 3
+shotType: 3
+damage: 75
+muzzleFlare: data/textures/particles/flares/f_railgun.bmp

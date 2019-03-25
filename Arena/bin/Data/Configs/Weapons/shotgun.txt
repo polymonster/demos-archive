@@ -1,0 +1,13 @@
+model: shotgun
+modeldir: data/models/guns/shotgun
+range: 1000
+fireRate: 1
+fireTimer: 0
+bulletSpeed: 60
+reloadRate: 2
+clipSize: 2
+maxClips: 10
+pickup: 5
+shotType: 2
+damage: 8
+muzzleFlare: data/textures/particles/flares/f_shotgun.bmp

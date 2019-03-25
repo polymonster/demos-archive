@@ -1,0 +1,3 @@
+skeleton Witch/witch_skele.csf
+mesh Witch/witch_mesh.cmf new_witch_text.tga
+animation Witch/witch_Walk.caf

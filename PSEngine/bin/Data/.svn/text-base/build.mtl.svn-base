@@ -1,0 +1,155 @@
+# Max2Mtl Version 4.0 Mar 10th, 2001
+#
+# Multi/Sub Material__35 (5) to come 
+#
+newmtl Object05Polygon
+Ka  0.7 0.7 0.7
+Kd  0.7 0.7 0.7
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  10.0
+illum 2
+map_Kd WIN_2.tga
+bump win_2N.tga
+#
+newmtl Object05roof_par
+Ka  0.7 0.7 0.7
+Kd  0.7 0.7 0.7
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  10.0
+illum 2
+map_Kd BODEN_1.tga
+bump boden_1N.tga
+#
+newmtl Object05roof
+Ka  0.7 0.7 0.7
+Kd  0.7 0.7 0.7
+Ks  1.0 1.0 1.0
+d  1.0
+Ns  10.0
+illum 2
+map_Kd MET_2.tga
+bump met_2N.tga
+#
+newmtl Object05Cls_4_-_
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd STONE_1.tga
+bump stone_1N.tga
+#
+newmtl Box03Cls_2_-_Def
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd BRICK20.tga
+bump brick20N.tga
+#
+# Multi/Sub Material__35 done 
+#
+# Multi/Sub Material__57 (4) to come 
+#
+newmtl Object01Cls_1_-_
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd BODEN_1.tga
+bump boden_1N.tga
+#
+newmtl Object02Cls_9_-_
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd WIN_2.tga
+bump win_2N.tga
+#
+newmtl Object02Cls_5_-_
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd KABEL_1.tga
+bump kabel_1N.tga
+#
+newmtl Object02Cls_4_-_
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd KLIMA_1.tga
+bump klima_1N.tga
+#
+# Multi/Sub Material__57 done 
+#
+newmtl Object01Cls_1_-_
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd BODEN_1.tga
+bump boden_1N.tga
+#
+# Multi/Sub Material__46 (2) to come 
+#
+newmtl Box03Cls_2_-_Def
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd BRICK20.tga
+bump brick20N.tga
+#
+newmtl Object01Cls_1_-_
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd BODEN_1.tga
+bump boden_1N.tga
+#
+# Multi/Sub Material__46 done 
+#
+newmtl Box02Cls_0_-_Def
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd DOOR_2.tga
+bump door_2N.tga
+#
+newmtl Box03Cls_2_-_Def
+Ka  0.6 0.6 0.6
+Kd  0.6 0.6 0.6
+Ks  0.9 0.9 0.9
+d  1.0
+Ns  10.0
+illum 2
+map_Kd BRICK20.tga
+bump brick20N.tga
+#
+# EOF

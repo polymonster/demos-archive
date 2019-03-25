@@ -1,0 +1,102 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 5 5.0.3.1555 Release
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl Object02Cls_4___
+Ka 0.584314 0.584314 0.584314
+Kd 0.584314 0.584314 0.584314
+Ks 0.894118 0.894118 0.894118
+illum 2
+Ns 48.5029
+map_Kd ANLAGE_1.png
+map_bump anlage_2.png
+bump anlage_2.png
+map_opacity 
+map_d 
+refl 
+map_kS anlage_3.png
+map_kA 
+map_Ns 
+
+newmtl Object02Cls_2___
+Ka 0.584314 0.584314 0.584314
+Kd 0.584314 0.584314 0.584314
+Ks 0.894118 0.894118 0.894118
+illum 2
+Ns 48.5029
+map_Kd MET_5.png
+map_bump MET_5N.png
+bump MET_5N.png
+map_opacity 
+map_d 
+refl 
+map_kS MET_5S.png
+map_kA 
+map_Ns 
+
+newmtl Object02Cls_1___
+Ka 0.584314 0.584314 0.584314
+Kd 0.584314 0.584314 0.584314
+Ks 0.894118 0.894118 0.894118
+illum 2
+Ns 48.5029
+map_Kd MET_5_1.png
+map_bump MET_5_1N.png
+bump MET_5_1N.png
+map_opacity 
+map_d 
+refl 
+map_kS MET_5_1S.png
+map_kA 
+map_Ns 
+
+newmtl Object02Cls_5___
+Ka 0.584314 0.584314 0.584314
+Kd 0.584314 0.584314 0.584314
+Ks 0.894118 0.894118 0.894118
+illum 2
+Ns 48.5029
+map_Kd MET_8.png
+map_bump MET_88N.png
+bump MET_88N.png
+map_opacity 
+map_d 
+refl 
+map_kS MET_88S.png
+map_kA 
+map_Ns 
+
+newmtl Object02Cls_3___
+Ka 0.584314 0.584314 0.584314
+Kd 0.584314 0.584314 0.584314
+Ks 0.894118 0.894118 0.894118
+illum 2
+Ns 48.5029
+map_Kd MET_7.png
+map_bump MET_7N.png
+bump MET_7N.png
+map_opacity 
+map_d 
+refl 
+map_kS MET_7S.png
+map_kA 
+map_Ns 
+
+newmtl Explorer_Default
+Ka 0.117647 0.117647 0.117647
+Kd 0.752941 0.752941 0.752941
+Ks 0.752941 0.752941 0.752941
+illum 2
+Ns 8
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

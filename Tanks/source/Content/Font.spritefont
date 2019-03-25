@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file contains an xml description of a font, and will be read by the XNA
+Framework Content Pipeline. Follow the comments to customize the appearance
+of the font in your game, and to change the characters which are available to draw
+with.
+-->
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics">
+  <Asset Type="Graphics:FontDescription">
+
+	  <FontName>Bernard MT Condensed</FontName>
+
+	  <Size>48</Size>
+
+	  <Spacing>2</Spacing>
+
+	  <Style>Bold</Style>
+
+	  <CharacterRegions>
+		  <CharacterRegion>
+			  <Start>&#32;</Start>
+			  <End>&#127;</End>
+		  </CharacterRegion>
+	  </CharacterRegions>
+	  
+  </Asset>
+</XnaContent>

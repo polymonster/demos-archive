@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9.00"
+	Name="Editor"
+	ProjectGUID="{0A3EE828-8007-49B6-856F-FF23CECA078D}"
+	RootNamespace="Editor"
+	Keyword="ManagedCProj"
+	TargetFrameworkVersion="131072"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;../Source Code/Octree&quot;;&quot;../Source Code/Asset Manager/&quot;;&quot;../Source Code/Asset Manager/Texture Manager/&quot;;&quot;../Source Code/Asset Manager/Model Manager/&quot;;&quot;../Source Code/GLee/&quot;;&quot;../Source Code/Helpers/&quot;;&quot;../Source Code/Input/&quot;;&quot;../Source Code/Scene Manager/Terrain&quot;;&quot;../Source Code/Scene Manager/Water&quot;;&quot;../Source Code/Scene Manager/&quot;;&quot;../Source Code/Shader&quot;;&quot;../Source Code/Main&quot;;&quot;../Source Code/Maths&quot;;&quot;../Source Code/Toolbars&quot;;&quot;../Source Code/Resource&quot;;&quot;../Source Code/Lighting/&quot;;&quot;../Source Code/View/&quot;;&quot;../Source Code/Scene Manager/Props/&quot;;&quot;../Source Code/Scene Manager/Atmosphere&quot;;&quot;../Source Code/Scene Manager/Foliage&quot;;&quot;../Source Code/USkin/Bin&quot;;&quot;../Source Code/USkin/Include&quot;;&quot;../Source Code/USkin/Lib&quot;;&quot;../Source Code/USkin&quot;"
+				PreprocessorDefinitions="WIN32;_DEBUG"
+				MinimalRebuild="false"
+				BasicRuntimeChecks="0"
+				RuntimeLibrary="3"
+				WarningLevel="1"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)\$(ProjectName).exe"
+				LinkIncremental="2"
+				AdditionalLibraryDirectories=""
+				GenerateDebugInformation="true"
+				AssemblyDebug="1"
+				StackReserveSize="300000"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			CharacterSet="2"
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories="&quot;../Source Code/Octree&quot;;&quot;../Source Code/Asset Manager/&quot;;&quot;../Source Code/Asset Manager/Texture Manager/&quot;;&quot;../Source Code/Asset Manager/Model Manager/&quot;;&quot;../Source Code/GLee/&quot;;&quot;../Source Code/Helpers/&quot;;&quot;../Source Code/Input/&quot;;&quot;../Source Code/Scene Manager/Terrain&quot;;&quot;../Source Code/Scene Manager/Water&quot;;&quot;../Source Code/Scene Manager/&quot;;&quot;../Source Code/Shader&quot;;&quot;../Source Code/Main&quot;;&quot;../Source Code/Maths&quot;;&quot;../Source Code/Toolbars&quot;;&quot;../Source Code/Resource&quot;;&quot;../Source Code/Lighting/&quot;;&quot;../Source Code/View/&quot;;&quot;../Source Code/Scene Manager/Props/&quot;;&quot;../Source Code/Scene Manager/Atmosphere&quot;;&quot;../Source Code/Scene Manager/Foliage&quot;;&quot;../Source Code/USkin/Bin&quot;;&quot;../Source Code/USkin/Include&quot;;&quot;../Source Code/USkin/Lib&quot;;&quot;../Source Code/USkin&quot;"
+				PreprocessorDefinitions="WIN32;NDEBUG"
+				MinimalRebuild="false"
+				RuntimeLibrary="2"
+				WarningLevel="3"
+				DebugInformationFormat="3"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				ResourceOutputFileName="&quot;../Source Code/resource/editor.res&quot;"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)\$(ProjectName).exe"
+				LinkIncremental="1"
+				GenerateDebugInformation="true"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
+				TargetMachine="1"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCManifestTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+		<AssemblyReference
+			RelativePath="mscorlib.dll"
+			AssemblyName="mscorlib, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=IA64"
+			MinFrameworkVersion="131072"
+		/>
+		<AssemblyReference
+			RelativePath="System.dll"
+			AssemblyName="System, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+			MinFrameworkVersion="131072"
+		/>
+		<AssemblyReference
+			RelativePath="System.Data.dll"
+			AssemblyName="System.Data, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=x86"
+			MinFrameworkVersion="131072"
+		/>
+		<AssemblyReference
+			RelativePath="System.Drawing.dll"
+			AssemblyName="System.Drawing, Version=2.0.0.0, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+			MinFrameworkVersion="131072"
+		/>
+		<AssemblyReference
+			RelativePath="System.Windows.Forms.dll"
+			AssemblyName="System.Windows.Forms, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+			MinFrameworkVersion="131072"
+		/>
+		<AssemblyReference
+			RelativePath="System.XML.dll"
+			AssemblyName="System.Xml, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+			MinFrameworkVersion="131072"
+		/>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\SkinFeature.h"
+				>
+			</File>
+			<Filter
+				Name="Main"
+				>
+				<File
+					RelativePath="..\Source Code\Main\Globals.h"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Main\Init.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Main\Main.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Main\main.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Helpers"
+				>
+				<Filter
+					Name="Fonts"
+					>
+					<File
+						RelativePath="..\Source Code\Helpers\Fonts.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Helpers\Fonts.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="General"
+					>
+					<File
+						RelativePath="..\Source Code\Helpers\Helpers.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Helpers\Helpers.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Helpers\VariableConsole.cpp"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="TextFile"
+					>
+					<File
+						RelativePath="..\Source Code\Shader\textfile.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Shader\textfile.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Windows Dialogue"
+					>
+					<File
+						RelativePath="..\Source Code\Helpers\DialogueHelpers.cpp"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="FBO"
+					>
+					<File
+						RelativePath="..\Source Code\Helpers\Fbo.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Helpers\Fbo.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="GLee"
+					>
+					<File
+						RelativePath="..\Source Code\GLee\GLee.c"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\GLee\GLee.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Input"
+				>
+				<File
+					RelativePath="..\Source Code\Input\Input.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Input\Input.h"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Input\TabletSupport.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Input\TabletSupport.h"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Input\VirtualCodes.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Maths"
+				>
+				<File
+					RelativePath="..\Source Code\Maths\Frustum.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Maths\myMath.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Maths\myMath.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Timer"
+				>
+				<File
+					RelativePath="..\Source Code\Main\TimerSingleton.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Main\TimerSingleton.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Shader"
+				>
+				<File
+					RelativePath="..\Source Code\Shader\ShaderManager.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Shader\ShaderManager.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Lighting"
+				>
+				<File
+					RelativePath="..\Source Code\Lighting\Lighting.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Lighting\Lighting.h"
+					>
+				</File>
+			</Filter>
+			<Filter
+				Name="Asset Manager"
+				>
+				<Filter
+					Name="Model Manager"
+					>
+					<File
+						RelativePath="..\Source Code\Asset Manager\Model Manager\3ds.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Asset Manager\Model Manager\3ds.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Asset Manager\Model Manager\3dsLoader.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Asset Manager\Model Manager\3dsLoader.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Asset Manager\Model Manager\modelManager.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Asset Manager\Model Manager\modelManager.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="TextureManager"
+					>
+					<File
+						RelativePath="..\Source Code\Asset Manager\Texture Manager\textureSingleton.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Asset Manager\Texture Manager\textureSingleton.h"
+						>
+					</File>
+					<Filter
+						Name="File Formats"
+						>
+						<File
+							RelativePath="..\Source Code\Asset Manager\Texture Manager\myTga.cpp"
+							>
+						</File>
+						<File
+							RelativePath="..\Source Code\Asset Manager\Texture Manager\myTga.h"
+							>
+						</File>
+					</Filter>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Scene Manager"
+				>
+				<Filter
+					Name="Terrain"
+					>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Terrain\Terrain.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Terrain\Terrain.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Terrain\TerrainEditor.cpp"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="View"
+					>
+					<File
+						RelativePath="..\Source Code\View\View.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\View\View.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Props"
+					>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Props\Props.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Props\Props.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Scene"
+					>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Scene.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Scene.h"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Scene Manager\SceneIO.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Scene Manager\SceneObject.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Atmosphere"
+					>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Atmosphere\Atmosphere.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Atmosphere\Atmosphere.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Octree"
+					>
+					<File
+						RelativePath="..\Source Code\Octree\Octree.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Octree\Octree.h"
+						>
+					</File>
+				</Filter>
+				<Filter
+					Name="Water"
+					>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Water\Water.cpp"
+						>
+					</File>
+					<File
+						RelativePath="..\Source Code\Scene Manager\Water\Water.h"
+						>
+					</File>
+				</Filter>
+			</Filter>
+			<Filter
+				Name="Toolbars"
+				>
+				<File
+					RelativePath="..\Source Code\Toolbars\ToolbarGlobals.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Toolbars\Toolbars.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Toolbars\Toolbars.h"
+					>
+				</File>
+				<File
+					RelativePath="..\Source Code\Toolbars\ToolbarUpdate.cpp"
+					>
+				</File>
+			</Filter>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+			<File
+				RelativePath="..\Source Code\Resource\Editor.rc"
+				>
+			</File>
+			<File
+				RelativePath="..\Source Code\Resource\icon2.ico"
+				>
+			</File>
+			<File
+				RelativePath="..\Source Code\Resource\resource.h"
+				>
+			</File>
+			<File
+				RelativePath="..\Source Code\Resource\rt_manif.bin"
+				>
+			</File>
+		</Filter>
+		<File
+			RelativePath="..\Source Code\dump\dump.h"
+			>
+		</File>
+	</Files>
+	<Globals>
+		<Global
+			Name="RESOURCE_FILE"
+			Value="Editor.rc"
+		/>
+	</Globals>
+</VisualStudioProject>

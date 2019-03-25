@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/bump
+END
+bump.glsl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/bump/bump.glsl
+END
+bumpF.frag
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/bump/bumpF.frag
+END
+bumpV.vert
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/bump/bumpV.vert
+END

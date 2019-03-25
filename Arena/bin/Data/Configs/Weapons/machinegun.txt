@@ -1,0 +1,13 @@
+model: machinegun
+modeldir: data/models/guns/machinegun
+range: 4000
+fireRate: 0.1
+fireTimer: 0
+bulletSpeed: 95
+reloadRate: 1
+clipSize: 30
+maxClips: 20
+pickup: 10
+shotType: 0
+damage: 4
+muzzleFlare: data/textures/particles/flares/f_machinegun.bmp

@@ -1,0 +1,3 @@
+The device in front of you is a test [red]Control Lever[]. 
+If you operate it, the gate ahead will open. 
+Proceed through the gates to the next intercom.

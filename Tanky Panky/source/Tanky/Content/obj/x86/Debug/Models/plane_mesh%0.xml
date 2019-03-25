@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:NodeContent">
+    <Name>Plane01</Name>
+    <Identity>
+      <SourceFilename>K:\Current Code\CGT\TankyPanky\Tanky\Content\Models\plane_mesh.X</SourceFilename>
+      <SourceTool>XImporter</SourceTool>
+    </Identity>
+    <Transform>1 0 0 0 0 1 0 0 0 0 1 0 18.8613281 0 36.85791 1</Transform>
+    <Children>
+      <Child Type="Graphics:MeshContent">
+        <Name></Name>
+        <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+        <Positions>-18278.5977 0 12277.041 -9139.299 0 12277.041 0 0 12277.041 9139.299 0 12277.041 18278.5977 0 12277.041 -18278.5977 0 6138.52051 -9139.299 0 6138.52051 0 0 6138.52051 9139.299 0 6138.52051 18278.5977 0 6138.52051 -18278.5977 0 0 -9139.299 0 0 0 0 0 9139.299 0 0 18278.5977 0 0 -18278.5977 0 -6138.52051 -9139.299 0 -6138.52051 0 0 -6138.52051 9139.299 0 -6138.52051 18278.5977 0 -6138.52051 -18278.5977 0 -12277.041 -9139.299 0 -12277.041 0 0 -12277.041 9139.299 0 -12277.041 18278.5977 0 -12277.041</Positions>
+        <Geometry>
+          <Batch>
+            <Material>#Resource1</Material>
+            <Indices>0 1 2 1 0 3 2 4 5 4 2 1 5 6 7 6 5 4 7 8 9 8 7 6 3 10 1 10 3 11 1 12 4 12 1 10 4 13 6 13 4 12 6 14 8 14 6 13 11 15 10 15 11 16 10 17 12 17 10 15 12 18 13 18 12 17 13 19 14 19 13 18 16 20 15 20 16 21 15 22 17 22 15 20 17 23 18 23 17 22 18 24 19 24 18 23</Indices>
+            <Vertices>
+              <PositionIndices>0 6 1 5 7 2 8 3 9 4 11 10 12 13 14 16 15 17 18 19 21 20 22 23 24</PositionIndices>
+              <Channels>
+                <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</VertexChannel>
+                <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">0.049949 0.950013 25.0249748 -24.024992 25.02497 0.950022 0.049952 -24.0250015 49.9999962 -24.0249863 49.9999924 0.95003 74.97502 -24.0249748 74.97501 0.950039 99.95004 -24.02497 99.95004 0.950048 25.02498 -49.0000076 0.049958 -49.00002 50 -49 74.97502 -48.9999924 99.95004 -48.99998 25.02498 -73.97503 0.049961 -73.97503 50.0000076 -73.97501 74.97503 -73.9750061 99.95005 -73.975 25.0249863 -98.95004 0.049964 -98.95005 50.0000076 -98.95003 74.97503 -98.95002 99.95005 -98.95001</VertexChannel>
+              </Channels>
+            </Vertices>
+          </Batch>
+        </Geometry>
+      </Child>
+    </Children>
+  </Asset>
+  <Resources>
+    <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
+      <Identity>
+        <SourceFilename>K:\Current Code\CGT\TankyPanky\Tanky\Content\Models\plane_mesh.X</SourceFilename>
+        <SourceTool>XImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">1 1 1</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularPower" Type="float">3.2</Data>
+      </OpaqueData>
+      <Textures>
+        <Texture Key="Texture">
+          <Reference>#External1</Reference>
+        </Texture>
+      </Textures>
+    </Resource>
+  </Resources>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\Models\Grass00.bmp</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

@@ -1,0 +1,3 @@
+shader_config
+vertex depth_peel/depth_peel_iterateV.vert
+fragment depth_peel/depth_peel_iterateF.frag

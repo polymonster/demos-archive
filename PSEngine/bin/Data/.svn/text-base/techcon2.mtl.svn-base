@@ -1,0 +1,13 @@
+#
+# techcon2.mtl
+#
+
+newmtl mat_techcont2_5_1
+Ka 0.200000 0.200000 0.200000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ns 0.000000
+map_Kd tech2.tga
+map_N tech2_normal.tga
+
+# EOF

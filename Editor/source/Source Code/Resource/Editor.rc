@@ -1,0 +1,831 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "windows.h"
+
+#define IDC_STATIC 666
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_BAR DIALOGEX 0, 0, 522, 23
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "",IDC_OPEN_TERRAIN_MENU,230,1,24,21,BS_BITMAP,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_HOME,178,1,24,21,BS_BITMAP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_OPEN_VIEW_MENU,204,1,24,21,BS_BITMAP | BS_NOTIFY,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_OPEN_PROP_MENU,256,1,24,21,BS_BITMAP,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_OPEN_FOLIAGE_MENU,282,1,24,21,BS_BITMAP,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_OPEN_WATER_MENU,308,1,24,21,BS_BITMAP,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_OPEN_ATMOSPHERE_MENU,334,1,24,21,BS_BITMAP,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_OPEN_OCTREE_MENU,360,1,24,21,BS_BITMAP,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_LOAD,2,1,24,21,BS_BITMAP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_SAVE2,28,1,24,21,BS_BITMAP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_UNDO,77,1,24,21,BS_BITMAP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_REDO,103,1,24,21,BS_BITMAP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_COPY,129,1,24,21,BS_BITMAP,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN_BAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 521
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_POLY_COUNT DIALOGEX 0, 0, 186, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Polygon Counter"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,66,54,50,14
+    CONTROL         "",IDC_POLY_PROGRESS,"msctls_progress32",WS_BORDER,12,6,
+                    162,17
+    CTEXT           "Static",IDC_POLY_NUMBERS,12,30,162,12,SS_CENTERIMAGE
+END
+
+IDD_TEXTURE_MAN DIALOGEX 0, 0, 424, 289
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+CAPTION "Texture Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Add",ID_ADD_TEXTURE,366,18,54,18
+    PUSHBUTTON      "Remove",IDCANCEL,366,42,54,18
+    LTEXT           "",IDC_TEXTURE_WINDOW,6,18,324,264
+    SCROLLBAR       IDC_TEXTURE_SCROLLBAR,330,18,12,264,SBS_VERT
+    CTEXT           "Display Size",IDC_STATIC,366,90,48,12
+    COMBOBOX        IDC_COMBO_SIZES,366,102,54,42,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Close",IDC_CLOSE,366,264,54,18
+    PUSHBUTTON      "Apply",IDC_BUTTON3,366,66,54,18
+    CONTROL         "",IDC_TEXTURE_TYPES,"SysTabControl32",0x0,6,6,324,12
+    LISTBOX         IDC_CUBEMAP_LIST_2,342,120,78,96,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_SKYBOX_WINDOW,6,19,324,263
+END
+
+IDD_MODEL_MANAGER DIALOGEX 0, 0, 478, 324
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION
+CAPTION "Model Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Add",ID_ADD_MODEL,414,6,54,12
+    PUSHBUTTON      "Remove",IDC_REMOVE_MODEL,414,24,54,12
+    LTEXT           "",IDC_MODEL_WINDOW,6,6,348,312
+    DEFPUSHBUTTON   "Close",ID_CLOSE,414,306,54,12
+    LTEXT           "File",IDC_STATIC,360,222,42,8,SS_CENTERIMAGE
+    LTEXT           "",IDC_MODEL_FILE,360,234,108,30
+    LTEXT           "Cull Faces",IDC_STATIC,360,270,42,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_CULLS,360,288,108,72,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_MODEL_LIST,360,42,108,96,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST1,360,162,108,42,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add Child Mesh",IDC_BUTTON1,360,144,54,12
+END
+
+IDD_TERRAIN_TEXTURE DIALOGEX 0, 0, 134, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Brush Properties",IDC_STATIC,7,7,119,65
+    CONTROL         "",IDC_SIZE_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,48,18,72,12
+    RTEXT           "Size",IDC_STATIC,24,18,18,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_STR_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,48,36,72,12
+    RTEXT           "Strength",IDC_STATIC,12,36,30,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_FADE_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,48,54,72,12
+    RTEXT           "Fade",IDC_STATIC,12,54,30,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_ACTIVE_TEXTURE,30,90,72,64
+    DEFPUSHBUTTON   "Change",ID_CHANGE_TEXTURE,30,156,72,14
+    CTEXT           "Active Texture",IDC_STATIC,30,78,68,12
+    COMBOBOX        IDC_COMBO1,78,192,42,66,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Texture Channel",IDC_STATIC,12,192,60,12,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "Texture Manager",ID_TEXTURE_MANAGER,30,174,72,14
+END
+
+IDD_TERRAIN_HEIGHT DIALOGEX 0, 0, 134, 198
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Brush Properties",IDC_STATIC,7,7,119,89
+    CONTROL         "",IDC_SIZE_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,48,18,72,12
+    RTEXT           "Size",IDC_STATIC,24,18,18,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_STR_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,48,36,72,12
+    RTEXT           "Strength",IDC_STATIC,12,36,30,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_FADE_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,48,54,72,12
+    RTEXT           "Falloff",IDC_STATIC,12,54,30,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_SCULPT_MODES,54,72,66,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Mode",IDC_STATIC,12,72,30,12,SS_CENTERIMAGE
+    GROUPBOX        "Set States",IDC_STATIC,7,105,120,63
+    PUSHBUTTON      "Recalculate Normals",IDC_RECALCULATE_NORMALS,12,120,72,
+                    18
+    PUSHBUTTON      "Flatten All",IDC_FLATTEN_ALL,12,144,72,18
+END
+
+IDD_TERRAIN_PROP DIALOGEX 0, 0, 153, 287
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_TERRAIN_OPTIONS,"SysTabControl32",0x0,7,7,137,
+                    273
+END
+
+IDD_SPLASH_SCREEN DIALOGEX 0, 0, 283, 158
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Loading: Messsages of loading things here",IDC_STATIC,7,
+                    132,276,19
+END
+
+IDD_TERRAIN_VALUES DIALOGEX 0, 0, 134, 198
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Dimensions",IDC_STATIC,6,42,120,48
+    RTEXT           "Grid Size",IDC_STATIC,12,54,30,12,SS_CENTERIMAGE
+    RTEXT           "Tile Size",IDC_STATIC,12,72,30,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Create New",IDC_TERRAIN_ADD,6,6,60,12
+    PUSHBUTTON      "Delete",IDC_TERRAIN_DELETE,6,24,60,12
+    COMBOBOX        IDC_TERRAIN_GRID_SIZE,48,54,42,60,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TERRAIN_TILE_SIZE,48,72,42,48,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Mirror",IDC_TERRAIN_MIRROR,7,97,60,12,BS_CENTER
+END
+
+IDD_TEX_WINDOW DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_VIEW_PROP DIALOGEX 0, 0, 152, 286
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Camera Settings",IDC_STATIC,7,7,138,70
+    GROUPBOX        "Grid Settings",IDC_STATIC,7,82,138,86
+    PUSHBUTTON      "Pivot Camera",IDC_PIVOT,12,18,60,18
+    PUSHBUTTON      "Free Camera",IDC_FREE,78,18,60,18
+    PUSHBUTTON      "Centre At Origin",IDC_ORIGIN,12,42,60,18
+    EDITTEXT        IDC_GRID_SIZE,12,120,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CELL_SIZE,12,138,60,12,ES_AUTOHSCROLL
+    LTEXT           "Grid Size",IDC_STATIC,90,120,36,12,SS_CENTERIMAGE
+    LTEXT           "Cell Size",IDC_STATIC,90,138,36,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,72,120,12,
+                    12
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,72,138,12,
+                    12
+    PUSHBUTTON      "Toggle",IDC_TOGGLE_GRID,12,96,72,18
+END
+
+IDD_PROP_PROP DIALOGEX 0, 0, 152, 414
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Add / Remove / Select",IDC_STATIC,6,6,138,42
+    GROUPBOX        "Translate / Rotate / Scale",IDC_STATIC,6,54,138,42
+    PUSHBUTTON      "T",IDC_TRANSLATE,12,66,30,24,BS_BITMAP
+    PUSHBUTTON      "R",IDC_ROTATE,60,66,30,24,BS_BITMAP
+    PUSHBUTTON      "S",IDC_SCALE,108,66,30,24,BS_BITMAP
+    PUSHBUTTON      "+",IDC_ADD_PROP,12,18,30,24,BS_BITMAP
+    PUSHBUTTON      "-",IDC_DELETE_PROP,60,18,30,24,BS_BITMAP
+    GROUPBOX        "Position [x,y,z]",IDC_STATIC,6,102,138,30
+    EDITTEXT        IDC_PROP_POS_X,16,114,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_POS_Y,58,114,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_POS_Z,100,114,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "Rotation [x,y,z]",IDC_STATIC,6,138,138,30
+    GROUPBOX        "Scale [x,y,z]",IDC_STATIC,6,174,138,30
+    LTEXT           "",IDC_PROP_MODEL_VIEW,6,264,138,120
+    PUSHBUTTON      "Add New Model To Manager",IDC_OPEN_MODEL_MANAGER_P,6,
+                    390,108,12
+    COMBOBOX        IDC_PROP_MODEL_LIST,12,241,126,53,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Selected Model",IDC_STATIC,6,228,138,30
+    PUSHBUTTON      "Focus Camera On Selected",IDC_FOCUS_MODEL,6,210,108,12
+    PUSHBUTTON      "<-",IDC_SELECT_PROP,108,18,30,24,BS_BITMAP
+    EDITTEXT        IDC_PROP_ROT_X,16,150,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_ROT_Y,58,150,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_ROT_Z,100,150,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_SCALE_X,16,186,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_SCALE_Y,58,186,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_SCALE_Z,100,186,35,12,ES_AUTOHSCROLL
+END
+
+IDD_FOLIAGE_PROP DIALOGEX 0, 0, 152, 308
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Radomise Scale Range",IDC_STATIC,6,6,138,30
+    LTEXT           "",IDC_FOLIAGE_MODEL_VIEW,6,132,138,120
+    GROUPBOX        "Radomise Y-Rotation Range",IDC_STATIC,6,42,138,30
+    EDITTEXT        IDC_FOLIAGE_ROTATE_TO,108,54,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOLIAGE_ROTATE_FROM,48,54,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "Placement Offset",IDC_STATIC,6,78,138,30
+    EDITTEXT        IDC_FOLIAGE_OFFSET_X,23,90,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOLIAGE_OFFSET_Y,65,90,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOLIAGE_OFFSET_Z,107,90,30,12,ES_AUTOHSCROLL
+    LTEXT           "X:",IDC_STATIC,15,90,8,12,SS_CENTERIMAGE
+    LTEXT           "Y:",IDC_STATIC,57,90,8,12,SS_CENTERIMAGE
+    LTEXT           "Z:",IDC_STATIC,99,90,8,12,SS_CENTERIMAGE
+    CTEXT           "And",IDC_STATIC,78,54,30,12,SS_CENTERIMAGE
+    PUSHBUTTON      "Add New Model",IDC_OPEN_MODEL_MANAGER,6,114,60,12
+    COMBOBOX        IDC_FOLIAGE_MODEL_LIST,12,270,126,39,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Selected Model",IDC_STATIC,6,258,138,30
+    CTEXT           "Between",IDC_STATIC,12,54,36,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FOLIAGE_SCALE_TO,108,18,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOLIAGE_SCALE_FROM,48,18,30,12,ES_AUTOHSCROLL
+    CTEXT           "And",IDC_STATIC,78,18,30,12,SS_CENTERIMAGE
+    CTEXT           "Between",IDC_STATIC,12,18,36,12,SS_CENTERIMAGE
+END
+
+IDD_WATER_PROP DIALOGEX 0, 0, 152, 290
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_WATER_OPTIONS,"SysTabControl32",0x0,7,7,138,
+                    276
+END
+
+IDD_MAIN_PORT DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_WATER_TEXTURE DIALOGEX 0, 0, 134, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ANIM_SPEED_X,18,18,66,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ANIM_SPEED_Y,18,36,66,12,ES_AUTOHSCROLL
+    LTEXT           "X-Axis",IDC_STATIC,90,18,30,12
+    LTEXT           "Y-Axis",IDC_STATIC,90,36,30,12
+    GROUPBOX        "Animation Speed",IDC_STATIC,6,6,120,55
+    LTEXT           "",IDC_ACTIVE_WATER_TEXTURE,30,90,72,64
+    DEFPUSHBUTTON   "Change",ID_CHANGE_WATER_TEXTURE,30,156,72,14
+    CTEXT           "Active Texture",IDC_STATIC,30,78,68,12
+    DEFPUSHBUTTON   "Texture Manager",ID_TEXTURE_MANAGER,30,174,72,14
+END
+
+IDD_WATER_OPTICAL DIALOGEX 0, 0, 134, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Optical Properties",IDC_STATIC,0,6,132,72
+    COMBOBOX        IDC_COMBO_WATER_TYPES,5,23,72,72,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_REFDIS_X,5,97,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REFDIS_Y,5,114,72,12,ES_AUTOHSCROLL
+    LTEXT           "Rendering",IDC_STATIC,83,23,37,12
+    LTEXT           "X-Axis",IDC_STATIC,83,97,48,12
+    LTEXT           "Y-Axis",IDC_STATIC,83,114,48,12
+    GROUPBOX        "Reflection Distortion",IDC_STATIC,0,84,132,48
+    EDITTEXT        IDC_RAFDIS_X,5,151,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RAFDIS_Y,5,169,72,12,ES_AUTOHSCROLL
+    LTEXT           "X-Axis",IDC_STATIC,83,151,48,12
+    LTEXT           "Y-Axis",IDC_STATIC,83,169,48,12
+    GROUPBOX        "Refraction Distortion",IDC_STATIC,0,138,132,48
+    CTEXT           "Transparency",IDC_STATIC,42,42,48,12
+    CONTROL         "",IDC_TRANSPARENCY_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,6,54,120,12
+END
+
+IDD_WATER_MANAGEMENT DIALOGEX 0, 0, 134, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Translate / Rotate / Scale",IDC_STATIC,6,48,120,42
+    PUSHBUTTON      "T",IDC_WATER_TRANSLATE,12,59,30,24,BS_BITMAP
+    PUSHBUTTON      "R",IDC_WATER_ROTATE,48,59,30,24,BS_BITMAP
+    PUSHBUTTON      "S",IDC_WATER_SCALE2,84,59,30,24,BS_BITMAP
+    GROUPBOX        "Add / Remove / Select",IDC_STATIC,6,6,120,42
+    PUSHBUTTON      "+",IDC_WATER_ADD,12,17,30,24,BS_BITMAP
+    PUSHBUTTON      "-",IDC_WATER_DELETE,48,17,30,24,BS_BITMAP
+    PUSHBUTTON      "->",IDC_WATER_SELECT,84,17,30,24,BS_BITMAP
+END
+
+IDD_ATMOSPHERE_PROP DIALOGEX 0, 0, 156, 287
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_ATMOSPHERE_OPTIONS,"SysTabControl32",0x0,7,7,
+                    142,273
+END
+
+IDD_ATMOSPHERE_ENV DIALOGEX 0, 0, 134, 281
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Shadows",IDC_STATIC,6,6,120,120
+    PUSHBUTTON      "Set Shadow Position",IDC_SHADOW_POSITION,12,18,72,12
+    PUSHBUTTON      "Generate",IDC_SHADOW_GENERATE,12,36,72,12
+    PUSHBUTTON      "Toggle Bloom",IDC_TOGGLE_BLOOM,12,145,72,12
+    COMBOBOX        IDC_SHADOW_SIZE,72,54,48,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Texture Size",IDC_STATIC,24,54,42,12
+    COMBOBOX        IDC_BLOOM_SIZE,72,162,48,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Texture Size",IDC_STATIC,24,162,42,12
+    LTEXT           "Blur Passes",IDC_STATIC,30,180,36,12
+    CTEXT           "Luminance",IDC_STATIC,72,204,36,12
+    CONTROL         "",IDC_BLOOM_LUMINANCE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,60,228,60,12
+    EDITTEXT        IDC_BLOOM_PASSES,72,180,48,12,ES_AUTOHSCROLL
+    LTEXT           "Polygon Offset",IDC_STATIC,42,96,48,12
+    CONTROL         "",IDC_SHADOW_OFFSET,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,12,108,108,12
+    LTEXT           "Real Time",IDC_STATIC,30,72,36,12
+    COMBOBOX        IDC_SHADOW_REAL_TIME,72,72,48,36,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Bloom",IDC_STATIC,6,132,120,66
+    LTEXT           "",IDC_BLOOM_COLOR,12,222,30,24
+    PUSHBUTTON      "Colour",IDC_BLOOM_COLOR_B,12,204,30,12
+END
+
+IDD_ATMOSPHERE_SKY DIALOGEX 0, 0, 134, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Translate / Scale",IDC_STATIC,6,6,120,42
+    PUSHBUTTON      "T",IDC_ATMOSPHERE_TRANSLATE,12,18,30,24,BS_BITMAP
+    PUSHBUTTON      "S",IDC_ATMOSPHERE_SCALE,48,18,30,24,BS_BITMAP
+    LTEXT           "",IDC_SKYBOX_VIEWER,6,54,120,96
+    PUSHBUTTON      "Change",IDC_CHANGE_BOX,30,162,72,12
+    PUSHBUTTON      "Texture Manager",IDC_SKY_TEXTURE_MANAGER,30,180,72,12
+END
+
+IDD_ATMOSPHERE_MANAGEMENT DIALOGEX 0, 0, 134, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Add / Remove",-1,6,6,120,42
+    PUSHBUTTON      "+",IDC_ATMOSPHERE_ADD,12,17,30,24,BS_BITMAP
+    PUSHBUTTON      "-",IDC_ATMOSPHERE_DELETE,48,17,30,24,BS_BITMAP
+END
+
+IDD_OCTREE_PROP DIALOGEX 0, 0, 152, 286
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Properties",IDC_STATIC,6,6,138,72
+    LTEXT           "Maximum Objects Per Node",IDC_STATIC,12,18,90,12
+    EDITTEXT        IDC_OCTREE_OBJECTS,12,30,38,14,ES_AUTOHSCROLL
+    LTEXT           "Minimum Node Size",IDC_STATIC,12,48,90,12
+    EDITTEXT        IDC_OCTREE_NODE_SIZE,12,60,38,14,ES_AUTOHSCROLL
+    GROUPBOX        "Root",IDC_STATIC,6,84,138,42
+    PUSHBUTTON      "T",IDC_OCTREE_TRANSLATE,12,96,30,24,BS_BITMAP
+    PUSHBUTTON      "S",IDC_OCTREE_SCALE,48,96,30,24,BS_BITMAP
+    GROUPBOX        "Usage",IDC_STATIC,6,132,138,66
+    PUSHBUTTON      "Build Octree",IDC_BUILD_OCTREE,12,144,72,12
+    PUSHBUTTON      "View Octree Nodes",IDC_VIEW_OCTREE,12,162,72,12
+    PUSHBUTTON      "Render Using Octree",IDC_RENDER_OCTREE,12,180,72,12
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 266, 214
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,102,6,50,14
+    EDITTEXT        IDC_EDIT1,6,6,81,16,ES_AUTOHSCROLL
+    LTEXT           "Static Text",IDC_STATIC,6,30,78,12
+    GROUPBOX        "Group",IDC_STATIC,6,48,78,30
+    SCROLLBAR       IDC_SCROLLBAR1,246,6,12,204,SBS_VERT
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,6,84,78,18
+    COMBOBOX        IDC_COMBO1,102,30,48,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST3,102,54,48,54,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,6,138,108,72
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_POLY_COUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_TEXTURE_MAN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_MODEL_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 471
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 317
+    END
+
+    IDD_TERRAIN_TEXTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_TERRAIN_HEIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_TERRAIN_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_SPLASH_SCREEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_TERRAIN_VALUES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_TEX_WINDOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_VIEW_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_PROP_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 407
+    END
+
+    IDD_FOLIAGE_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 301
+    END
+
+    IDD_WATER_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_MAIN_PORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_WATER_TEXTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_WATER_OPTICAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_WATER_MANAGEMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_ATMOSPHERE_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_ATMOSPHERE_ENV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_ATMOSPHERE_SKY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_ATMOSPHERE_MANAGEMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_OCTREE_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 279
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MY_MENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New",                         ID_FILE_NEW40043
+        MENUITEM "Save",                        ID_FILE_SAVEFILE
+        MENUITEM "Load",                        ID_FILE_LOADFILE
+        MENUITEM SEPARATOR
+        POPUP "Import"
+        BEGIN
+            MENUITEM "Texture Manager Library",     ID_IMPORT_TEXTUREMANAGERLIBRARY
+
+            MENUITEM "Model Manager Library",       ID_IMPORT_MODELMANAGERLIBRARY
+
+            MENUITEM "Tanky Panky Map",             ID_IMPORT_TANKYPANKYMAP
+        END
+        POPUP "Export"
+        BEGIN
+            MENUITEM "Texture Manager Library",     ID_EXPORT_TEXTUREMANAGERLIBRARY
+
+            MENUITEM "Model Manager Library",       ID_EXPORT_MODELMANAGERLIBRARY
+
+            MENUITEM "Tanky Panky Map",             ID_EXPORT_TANKYPANKYMAP
+            MENUITEM "Star Fighter Map",            40044
+        END
+        MENUITEM "&Quit",                       ID__QUIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Undo",                        ID_EDIT_UNDO40022
+        MENUITEM "Redo",                        ID_EDIT_REDO40023
+        MENUITEM SEPARATOR
+        MENUITEM "Clone",                       ID_EDIT_PASTER
+    END
+    POPUP "Asset Managers"
+    BEGIN
+        MENUITEM "Texture Manager",             ID_TEXTURE_MANAGER
+        MENUITEM "Model Manager",               ID_MODEL_MANAGER
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Shader &Compiler",            ID_TOOLS_SHADERCOMPILER
+        MENUITEM "Polygon Counter",             ID_TOOLS_POLYGONCOUNTER
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "About &OrganGrinder",         ID_ABOUT_ABOUTORGANGRINDER
+    END
+END
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "2",                           ID_1_2
+        MENUITEM "3",                           ID_1_3
+        MENUITEM "4",                           ID_1_4
+        MENUITEM "5",                           ID_1_5
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ICON2                   ICON                    "icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904b0"
+        BEGIN
+            VALUE "CompanyName", "Alex Dixon"
+            VALUE "FileDescription", "Organic 3D Environment Editing Tool"
+            VALUE "FileVersion", "1, 0, 0, 2"
+            VALUE "InternalName", "OrganGrinder"
+            VALUE "LegalCopyright", "Copyright (C) 2008"
+            VALUE "OriginalFilename", "OrganGrinder.exe"
+            VALUE "ProductName", "OrganGrinder"
+            VALUE "ProductVersion", "1, 0, 0, 2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "rt_manif.bin"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

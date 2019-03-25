@@ -1,0 +1,4 @@
+position : 27 , 281
+map : 130 , 127
+score : 520
+lives : 4

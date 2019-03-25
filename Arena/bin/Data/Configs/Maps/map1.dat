@@ -1,0 +1,13 @@
+arena_map_file
+render_mesh data/models/Maps/warehouse_opt.3ds
+collision_offset data/models/Maps/warehouse_offset.3ds
+collision_blocking data/models/Maps/warehouse_blocking.3ds
+collision_bullets data/models/Maps/warehouse_bullet.3ds
+spawn_point -521.915 0 -331.051
+spawn_point -293.14 -124.075 436.58
+spawn_point 764.346 67.1198 502.277
+spawn_point 383.376 66.8858 -541.971
+pickup_node -752.955 -752.955 -151.526 179.874 111
+pickup_node 0 0 39.2251 -505.024 110
+pickup_node 811.984 811.984 -173.155 -13.061 112
+pickup_node -421.131 -421.131 -168.999 -459.97 113

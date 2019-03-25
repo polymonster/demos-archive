@@ -1,0 +1,20 @@
+skeleton Skeleton/skele_skele.csf
+mesh Skeleton/skele_calf_left.cmf no_texture
+mesh Skeleton/skele_calf_right.cmf no_texture
+mesh Skeleton/skele_foot_left.cmf no_texture
+mesh Skeleton/skele_foot_right.cmf no_texture
+mesh Skeleton/skele_hand_left.cmf no_texture
+mesh Skeleton/skele_hand_right.cmf no_texture
+mesh Skeleton/skele_head.cmf no_texture
+mesh Skeleton/skele_larm_left.cmf no_texture
+mesh Skeleton/skele_larm_right.cmf no_texture
+mesh Skeleton/skele_uarm_left.cmf no_texture
+mesh Skeleton/skele_uarm_right.cmf no_texture
+mesh Skeleton/skele_lspine.cmf no_texture
+mesh Skeleton/skele_uspine.cmf no_texture
+mesh Skeleton/skele_neck.cmf no_texture
+mesh Skeleton/skele_pelvis.cmf no_texture
+mesh Skeleton/skele_thigh_left.cmf no_texture
+mesh Skeleton/skele_thigh_right.cmf no_texture
+mesh Skeleton/skele_torso.cmf no_texture
+animation Skeleton/skele_anim.caf

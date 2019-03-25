@@ -1,0 +1,19 @@
+# config for a smoke effect
+
+color 200 200 200 200
+speed 100
+acceleration 0.6
+duration 4
+falloff 20
+minsize 1.5
+maxsize 1.7
+expansionrate 0.14
+gravity -7
+rdrift 30
+drag 20
+dragdir 1 2 0
+minparticles 12
+maxparticles 18
+billboarded true
+rforce 250
+hemspread 0.7

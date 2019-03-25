@@ -1,0 +1,7 @@
+name sahara
+front cubemap\sahara_north.tga
+back cubemap\sahara_south.tga
+left cubemap\sahara_west.tga
+right cubemap\sahara_east.tga
+top cubemap\sahara_up.tga
+bottom cubemap\sahara_down.tga

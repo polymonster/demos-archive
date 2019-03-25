@@ -1,0 +1,33 @@
+//interpolants
+varying vec3 position;
+varying vec2 tex_coord;
+
+varying mat3 TBN;
+varying mat3 rot_mat;
+
+attribute vec4 tangent;
+
+uniform mat4 model_matrix;
+uniform mat4 rotation_matrix;
+					 
+void main(void)
+{
+	rot_mat[0] = rotation_matrix[0].xyz;
+	rot_mat[1] = rotation_matrix[1].xyz;
+	rot_mat[2] = rotation_matrix[2].xyz;
+	
+	//create TBN matrix
+	vec3 n = normalize(gl_Normal * rot_mat);
+	vec3 t = normalize(tangent.xyz * rot_mat);
+	vec3 b = cross( n, t ) * tangent.w;
+	
+	TBN[0] = t;
+	TBN[1] = b; 
+	TBN[2] = n; 	
+	
+	//set the vertex position and texture coords
+	tex_coord = gl_MultiTexCoord0.xy;
+	position = (gl_Vertex * model_matrix).xyz;
+	
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+}

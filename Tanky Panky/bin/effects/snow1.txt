@@ -1,0 +1,23 @@
+# config for a smoke effect
+
+color 255 255 255 180
+speed 150
+acceleration 1.0
+duration 10
+falloff 0
+minsize 0.2
+maxsize 0.5
+expansionrate 0.0
+gravity 20
+rdrift 20
+drag 15
+dragdir -3 -1 0
+minparticles 170
+maxparticles 220
+billboarded true
+hemspread 0
+isemitter true
+emitterlife 99999
+emitterfrequency 2.0
+spawndims 350 350
+maxpool 1500

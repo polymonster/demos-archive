@@ -1,0 +1,2474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Graphics="Microsoft.Xna.Framework.Graphics" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Effects\Model.fx</Source>
+      <Name>Effects\Model</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Effects\Model.xnb</Output>
+      <Time>2009-03-23T20:14:28.359375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\Terrain.fx</Source>
+      <Name>Effects\Terrain</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Effects\Terrain.xnb</Output>
+      <Time>2009-03-24T00:02:36.640625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\Particles\Base.fx</Source>
+      <Name>Effects\Particles\Base</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Effects\Particles\Base.xnb</Output>
+      <Time>2009-03-15T16:15:06.609375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\smoke1.tga</Source>
+      <Name>Textures\smoke1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\smoke1.xnb</Output>
+      <Time>2009-01-30T03:36:10.4993758+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Tex.jpg</Source>
+      <Name>Textures\Tex</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Tex.xnb</Output>
+      <Time>2009-01-31T19:07:20.203125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\wheel.png</Source>
+      <Name>Textures\wheel</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\wheel.xnb</Output>
+      <Time>2009-02-20T18:55:00.5625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Map\Map_Back.png</Source>
+      <Name>Textures\Map\Map_Back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Map\Map_Back.xnb</Output>
+      <Time>2009-03-04T13:20:59.34375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Map\Marker.png</Source>
+      <Name>Textures\Map\Marker</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Map\Marker.xnb</Output>
+      <Time>2009-03-05T00:29:26.546875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Map\Vehicle_Marker.png</Source>
+      <Name>Textures\Map\Vehicle_Marker</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Map\Vehicle_Marker.xnb</Output>
+      <Time>2009-03-05T00:29:26.515625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>UI\mouse.tga</Source>
+      <Name>UI\mouse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\UI\mouse.xnb</Output>
+      <Time>2009-03-06T21:39:20.182+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_1.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_1.xnb</Output>
+      <Time>2009-03-07T02:16:19.7445+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_2.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_2.xnb</Output>
+      <Time>2009-03-07T17:38:00.671875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_3.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_3.xnb</Output>
+      <Time>2009-03-07T17:38:00.703125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_4.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_4.xnb</Output>
+      <Time>2009-03-07T17:38:00.734375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_5.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_5.xnb</Output>
+      <Time>2009-03-07T17:38:00.765625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ESE Edition.png</Source>
+      <Name>Gui\Backgrounds\ESE Edition</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ESE Edition.xnb</Output>
+      <Time>2009-03-07T17:38:00.78125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonBack-01.png</Source>
+      <Name>Gui\Buttons\ButtonBack-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonBack-01.xnb</Output>
+      <Time>2009-03-22T22:19:31.140625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonBack-02.png</Source>
+      <Name>Gui\Buttons\ButtonBack-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonBack-02.xnb</Output>
+      <Time>2009-03-22T22:19:31.203125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonBack-03.png</Source>
+      <Name>Gui\Buttons\ButtonBack-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonBack-03.xnb</Output>
+      <Time>2009-03-22T22:19:31.234375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonBack-04.png</Source>
+      <Name>Gui\Buttons\ButtonBack-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonBack-04.xnb</Output>
+      <Time>2009-03-22T22:19:31.265625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonBack-05.png</Source>
+      <Name>Gui\Buttons\ButtonBack-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonBack-05.xnb</Output>
+      <Time>2009-03-22T22:19:31.296875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonBack-06.png</Source>
+      <Name>Gui\Buttons\ButtonBack-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonBack-06.xnb</Output>
+      <Time>2009-03-22T22:19:31.328125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonChat-01.png</Source>
+      <Name>Gui\Buttons\ButtonChat-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonChat-01.xnb</Output>
+      <Time>2009-03-13T21:43:05.59375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonChat-02.png</Source>
+      <Name>Gui\Buttons\ButtonChat-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonChat-02.xnb</Output>
+      <Time>2009-03-13T21:43:05.65625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonChat-03.png</Source>
+      <Name>Gui\Buttons\ButtonChat-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonChat-03.xnb</Output>
+      <Time>2009-03-13T21:43:05.71875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonChat-04.png</Source>
+      <Name>Gui\Buttons\ButtonChat-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonChat-04.xnb</Output>
+      <Time>2009-03-13T21:43:05.796875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonChat-05.png</Source>
+      <Name>Gui\Buttons\ButtonChat-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonChat-05.xnb</Output>
+      <Time>2009-03-13T21:43:05.859375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonChat-06.png</Source>
+      <Name>Gui\Buttons\ButtonChat-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonChat-06.xnb</Output>
+      <Time>2009-03-13T21:43:05.90625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonExit-01.png</Source>
+      <Name>Gui\Buttons\ButtonExit-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonExit-01.xnb</Output>
+      <Time>2009-03-13T21:43:06.390625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonExit-02.png</Source>
+      <Name>Gui\Buttons\ButtonExit-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonExit-02.xnb</Output>
+      <Time>2009-03-13T21:43:06.421875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonExit-03.png</Source>
+      <Name>Gui\Buttons\ButtonExit-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonExit-03.xnb</Output>
+      <Time>2009-03-13T21:43:06.5+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonExit-04.png</Source>
+      <Name>Gui\Buttons\ButtonExit-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonExit-04.xnb</Output>
+      <Time>2009-03-13T21:43:06.53125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonExit-05.png</Source>
+      <Name>Gui\Buttons\ButtonExit-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonExit-05.xnb</Output>
+      <Time>2009-03-13T21:43:06.578125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonExit-06.png</Source>
+      <Name>Gui\Buttons\ButtonExit-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonExit-06.xnb</Output>
+      <Time>2009-03-13T21:43:06.703125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonHost-01.png</Source>
+      <Name>Gui\Buttons\ButtonHost-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonHost-01.xnb</Output>
+      <Time>2009-03-13T21:43:06.78125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonHost-02.png</Source>
+      <Name>Gui\Buttons\ButtonHost-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonHost-02.xnb</Output>
+      <Time>2009-03-13T21:43:06.8125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonHost-03.png</Source>
+      <Name>Gui\Buttons\ButtonHost-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonHost-03.xnb</Output>
+      <Time>2009-03-13T21:43:06.859375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonHost-04.png</Source>
+      <Name>Gui\Buttons\ButtonHost-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonHost-04.xnb</Output>
+      <Time>2009-03-13T21:43:06.96875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonHost-05.png</Source>
+      <Name>Gui\Buttons\ButtonHost-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonHost-05.xnb</Output>
+      <Time>2009-03-13T21:43:07.046875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonHost-06.png</Source>
+      <Name>Gui\Buttons\ButtonHost-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonHost-06.xnb</Output>
+      <Time>2009-03-13T21:43:07.453125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonIP-01.png</Source>
+      <Name>Gui\Buttons\ButtonIP-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonIP-01.xnb</Output>
+      <Time>2009-03-13T21:43:07.765625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonIP-02.png</Source>
+      <Name>Gui\Buttons\ButtonIP-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonIP-02.xnb</Output>
+      <Time>2009-03-13T21:43:07.8125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonIP-03.png</Source>
+      <Name>Gui\Buttons\ButtonIP-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonIP-03.xnb</Output>
+      <Time>2009-03-13T21:43:07.859375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonIP-04.png</Source>
+      <Name>Gui\Buttons\ButtonIP-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonIP-04.xnb</Output>
+      <Time>2009-03-13T21:43:07.890625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonIP-05.png</Source>
+      <Name>Gui\Buttons\ButtonIP-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonIP-05.xnb</Output>
+      <Time>2009-03-13T21:43:07.953125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonIP-06.png</Source>
+      <Name>Gui\Buttons\ButtonIP-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonIP-06.xnb</Output>
+      <Time>2009-03-13T21:43:08.015625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonJoin-01.png</Source>
+      <Name>Gui\Buttons\ButtonJoin-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonJoin-01.xnb</Output>
+      <Time>2009-03-13T21:43:05.09375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonJoin-02.png</Source>
+      <Name>Gui\Buttons\ButtonJoin-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonJoin-02.xnb</Output>
+      <Time>2009-03-13T21:43:05.171875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonJoin-03.png</Source>
+      <Name>Gui\Buttons\ButtonJoin-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonJoin-03.xnb</Output>
+      <Time>2009-03-13T21:43:05.234375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonJoin-04.png</Source>
+      <Name>Gui\Buttons\ButtonJoin-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonJoin-04.xnb</Output>
+      <Time>2009-03-13T21:43:05.328125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonJoin-05.png</Source>
+      <Name>Gui\Buttons\ButtonJoin-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonJoin-05.xnb</Output>
+      <Time>2009-03-13T21:43:05.390625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonJoin-06.png</Source>
+      <Name>Gui\Buttons\ButtonJoin-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonJoin-06.xnb</Output>
+      <Time>2009-03-13T21:43:05.453125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonLeft-01.png</Source>
+      <Name>Gui\Buttons\ButtonLeft-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonLeft-01.xnb</Output>
+      <Time>2009-03-13T21:43:04.953125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonLeft-02.png</Source>
+      <Name>Gui\Buttons\ButtonLeft-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonLeft-02.xnb</Output>
+      <Time>2009-03-13T21:43:05.015625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonLeft-03.png</Source>
+      <Name>Gui\Buttons\ButtonLeft-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonLeft-03.xnb</Output>
+      <Time>2009-03-13T21:43:05.046875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonRight-01.png</Source>
+      <Name>Gui\Buttons\ButtonRight-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonRight-01.xnb</Output>
+      <Time>2009-03-13T21:43:06.609375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonRight-02.png</Source>
+      <Name>Gui\Buttons\ButtonRight-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonRight-02.xnb</Output>
+      <Time>2009-03-13T21:43:06.65625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonRight-03.png</Source>
+      <Name>Gui\Buttons\ButtonRight-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonRight-03.xnb</Output>
+      <Time>2009-03-13T21:43:06.75+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonStart-01.png</Source>
+      <Name>Gui\Buttons\ButtonStart-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonStart-01.xnb</Output>
+      <Time>2009-03-13T21:43:06.15625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonStart-02.png</Source>
+      <Name>Gui\Buttons\ButtonStart-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonStart-02.xnb</Output>
+      <Time>2009-03-13T21:43:06.1875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonStart-03.png</Source>
+      <Name>Gui\Buttons\ButtonStart-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonStart-03.xnb</Output>
+      <Time>2009-03-13T21:43:06.21875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonStart-04.png</Source>
+      <Name>Gui\Buttons\ButtonStart-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonStart-04.xnb</Output>
+      <Time>2009-03-13T21:43:06.25+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonStart-05.png</Source>
+      <Name>Gui\Buttons\ButtonStart-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonStart-05.xnb</Output>
+      <Time>2009-03-13T21:43:06.296875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonStart-06.png</Source>
+      <Name>Gui\Buttons\ButtonStart-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonStart-06.xnb</Output>
+      <Time>2009-03-13T21:43:06.34375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ChatBox-01.png</Source>
+      <Name>Gui\Buttons\ChatBox-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ChatBox-01.xnb</Output>
+      <Time>2009-03-13T21:43:07.734375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ChatContainer-02.png</Source>
+      <Name>Gui\Buttons\ChatContainer-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ChatContainer-02.xnb</Output>
+      <Time>2009-03-13T21:43:07.703125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonName-01.png</Source>
+      <Name>Gui\Buttons\ButtonName-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonName-01.xnb</Output>
+      <Time>2009-03-13T21:43:07.015625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonName-02.png</Source>
+      <Name>Gui\Buttons\ButtonName-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonName-02.xnb</Output>
+      <Time>2009-03-13T21:43:07.09375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonName-03.png</Source>
+      <Name>Gui\Buttons\ButtonName-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonName-03.xnb</Output>
+      <Time>2009-03-13T21:43:07.53125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonName-04.png</Source>
+      <Name>Gui\Buttons\ButtonName-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonName-04.xnb</Output>
+      <Time>2009-03-13T21:43:07.5625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonName-05.png</Source>
+      <Name>Gui\Buttons\ButtonName-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonName-05.xnb</Output>
+      <Time>2009-03-13T21:43:07.625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonName-06.png</Source>
+      <Name>Gui\Buttons\ButtonName-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonName-06.xnb</Output>
+      <Time>2009-03-13T21:43:07.6875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonApply-01.png</Source>
+      <Name>Gui\Buttons\ButtonApply-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonApply-01.xnb</Output>
+      <Time>2009-03-13T21:43:05.9375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonApply-02.png</Source>
+      <Name>Gui\Buttons\ButtonApply-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonApply-02.xnb</Output>
+      <Time>2009-03-13T21:43:05.984375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonApply-03.png</Source>
+      <Name>Gui\Buttons\ButtonApply-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonApply-03.xnb</Output>
+      <Time>2009-03-13T21:43:06.015625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonApply-04.png</Source>
+      <Name>Gui\Buttons\ButtonApply-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonApply-04.xnb</Output>
+      <Time>2009-03-13T21:43:06.046875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonApply-05.png</Source>
+      <Name>Gui\Buttons\ButtonApply-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonApply-05.xnb</Output>
+      <Time>2009-03-13T21:43:06.078125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonApply-06.png</Source>
+      <Name>Gui\Buttons\ButtonApply-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonApply-06.xnb</Output>
+      <Time>2009-03-13T21:43:06.109375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonNext-01.png</Source>
+      <Name>Gui\Buttons\ButtonNext-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonNext-01.xnb</Output>
+      <Time>2009-03-13T21:43:05.53125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonNext-02.png</Source>
+      <Name>Gui\Buttons\ButtonNext-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonNext-02.xnb</Output>
+      <Time>2009-03-13T21:43:05.546875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonNext-03.png</Source>
+      <Name>Gui\Buttons\ButtonNext-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonNext-03.xnb</Output>
+      <Time>2009-03-13T21:43:05.625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonNext-04.png</Source>
+      <Name>Gui\Buttons\ButtonNext-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonNext-04.xnb</Output>
+      <Time>2009-03-13T21:43:05.6875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonNext-05.png</Source>
+      <Name>Gui\Buttons\ButtonNext-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonNext-05.xnb</Output>
+      <Time>2009-03-13T21:43:05.765625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonNext-06.png</Source>
+      <Name>Gui\Buttons\ButtonNext-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonNext-06.xnb</Output>
+      <Time>2009-03-13T21:43:05.828125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonPrevious-01.png</Source>
+      <Name>Gui\Buttons\ButtonPrevious-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonPrevious-01.xnb</Output>
+      <Time>2009-03-13T21:43:07.921875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonPrevious-02.png</Source>
+      <Name>Gui\Buttons\ButtonPrevious-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonPrevious-02.xnb</Output>
+      <Time>2009-03-13T21:43:07.96875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonPrevious-03.png</Source>
+      <Name>Gui\Buttons\ButtonPrevious-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonPrevious-03.xnb</Output>
+      <Time>2009-03-13T21:43:08.046875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonPrevious-04.png</Source>
+      <Name>Gui\Buttons\ButtonPrevious-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonPrevious-04.xnb</Output>
+      <Time>2009-03-13T21:43:08.078125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonPrevious-05.png</Source>
+      <Name>Gui\Buttons\ButtonPrevious-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonPrevious-05.xnb</Output>
+      <Time>2009-03-13T21:43:08.125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonPrevious-06.png</Source>
+      <Name>Gui\Buttons\ButtonPrevious-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonPrevious-06.xnb</Output>
+      <Time>2009-03-13T21:43:08.171875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_6.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_6.xnb</Output>
+      <Time>2009-03-13T23:26:16.3125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_7.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_7.xnb</Output>
+      <Time>2009-03-13T23:26:16.484375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_8.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_8.xnb</Output>
+      <Time>2009-03-13T23:26:16.5625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_9.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_9.xnb</Output>
+      <Time>2009-03-13T23:26:16.640625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\Title.png</Source>
+      <Name>Gui\Buttons\Title</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\Title.xnb</Output>
+      <Time>2009-03-13T23:26:19.34375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\Vehicles-01.png</Source>
+      <Name>Gui\Buttons\Vehicles-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\Vehicles-01.xnb</Output>
+      <Time>2009-03-13T23:26:19.25+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\Vehicles-02.png</Source>
+      <Name>Gui\Buttons\Vehicles-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\Vehicles-02.xnb</Output>
+      <Time>2009-03-13T23:26:19.296875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\Settings.png</Source>
+      <Name>Gui\Buttons\Settings</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\Settings.xnb</Output>
+      <Time>2009-03-15T22:49:53.703125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonTeam-01.png</Source>
+      <Name>Gui\Buttons\ButtonTeam-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonTeam-01.xnb</Output>
+      <Time>2009-03-14T15:07:23.203125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonTeam-02.png</Source>
+      <Name>Gui\Buttons\ButtonTeam-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonTeam-02.xnb</Output>
+      <Time>2009-03-14T15:07:23.25+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonTeam-03.png</Source>
+      <Name>Gui\Buttons\ButtonTeam-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonTeam-03.xnb</Output>
+      <Time>2009-03-14T15:07:23.265625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonTeam-04.png</Source>
+      <Name>Gui\Buttons\ButtonTeam-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonTeam-04.xnb</Output>
+      <Time>2009-03-14T15:07:23.296875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonTeam-05.png</Source>
+      <Name>Gui\Buttons\ButtonTeam-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonTeam-05.xnb</Output>
+      <Time>2009-03-14T15:07:23.328125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonTeam-06.png</Source>
+      <Name>Gui\Buttons\ButtonTeam-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonTeam-06.xnb</Output>
+      <Time>2009-03-14T15:07:23.359375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\InGame Scoreboard.png</Source>
+      <Name>Gui\Backgrounds\InGame Scoreboard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\InGame Scoreboard.xnb</Output>
+      <Time>2009-03-20T11:58:05.546875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\FontArmy_12pt.bmp</Source>
+      <Name>Fonts\FontArmy_12pt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Fonts\FontArmy_12pt.xnb</Output>
+      <Time>2009-03-18T11:22:17.171875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\FontArmy_14pt.bmp</Source>
+      <Name>Fonts\FontArmy_14pt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Fonts\FontArmy_14pt.xnb</Output>
+      <Time>2009-03-18T11:22:17.203125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\FontArmy_16pt.bmp</Source>
+      <Name>Fonts\FontArmy_16pt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Fonts\FontArmy_16pt.xnb</Output>
+      <Time>2009-03-18T11:22:17.21875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\gras_01.TGA</Source>
+      <Name>Textures\Terrain\gras_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\gras_01.xnb</Output>
+      <Time>2009-01-28T02:17:45.125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\snow_01.TGA</Source>
+      <Name>Textures\Terrain\snow_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\snow_01.xnb</Output>
+      <Time>2009-03-18T11:38:16.90625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\snow_02.TGA</Source>
+      <Name>Textures\Terrain\snow_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\snow_02.xnb</Output>
+      <Time>2009-01-28T02:17:48+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\snow_03.TGA</Source>
+      <Name>Textures\Terrain\snow_03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\snow_03.xnb</Output>
+      <Time>2009-01-28T02:17:48.171875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\ground_03.TGA</Source>
+      <Name>Textures\Terrain\ground_03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\ground_03.xnb</Output>
+      <Time>2009-01-28T02:17:46.140625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\sand_01.TGA</Source>
+      <Name>Textures\Terrain\sand_01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\sand_01.xnb</Output>
+      <Time>2009-01-28T02:17:46.765625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\sand_03.TGA</Source>
+      <Name>Textures\Terrain\sand_03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\sand_03.xnb</Output>
+      <Time>2009-01-28T02:17:47+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\soil_02.TGA</Source>
+      <Name>Textures\Terrain\soil_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\soil_02.xnb</Output>
+      <Time>2009-01-28T02:17:48.5625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\gras_02.TGA</Source>
+      <Name>Textures\Terrain\gras_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\gras_02.xnb</Output>
+      <Time>2009-01-28T02:17:45.265625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Terrain\stone_02.TGA</Source>
+      <Name>Textures\Terrain\stone_02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Textures\Terrain\stone_02.xnb</Output>
+      <Time>2009-01-28T02:17:49.125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_10.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_10.xnb</Output>
+      <Time>2009-03-19T06:00:53.25+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_11.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_11.xnb</Output>
+      <Time>2009-03-19T06:00:53.09375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_12.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_12.xnb</Output>
+      <Time>2009-03-19T06:00:53.125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\ConceptBackground_13.png</Source>
+      <Name>Gui\Backgrounds\ConceptBackground_13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\ConceptBackground_13.xnb</Output>
+      <Time>2009-03-19T06:00:53.15625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Backgrounds\Ese2.png</Source>
+      <Name>Gui\Backgrounds\Ese2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Backgrounds\Ese2.xnb</Output>
+      <Time>2009-03-19T06:00:53.21875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Other\Desert Thumb.png</Source>
+      <Name>Gui\Other\Desert Thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Other\Desert Thumb.xnb</Output>
+      <Time>2009-03-19T06:00:46.78125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Other\Forest Thumb.png</Source>
+      <Name>Gui\Other\Forest Thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Other\Forest Thumb.xnb</Output>
+      <Time>2009-03-19T06:00:46.734375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Other\Snow Thumb.png</Source>
+      <Name>Gui\Other\Snow Thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Other\Snow Thumb.xnb</Output>
+      <Time>2009-03-19T06:00:46.8125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\RegularFont.spritefont</Source>
+      <Name>Fonts\RegularFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Fonts\RegularFont.xnb</Output>
+      <Time>2009-02-18T16:13:57.296875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Font.spritefont</Source>
+      <Name>Fonts\Font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Fonts\Font.xnb</Output>
+      <Time>2009-03-13T17:58:14.734375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Army.spritefont</Source>
+      <Name>Fonts\Army</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Fonts\Army.xnb</Output>
+      <Time>2009-03-13T23:45:34.8125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\base_mesh.X</Source>
+      <Name>Models\base_mesh</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\base_mesh.xnb</Output>
+      <Time>2009-03-04T18:24:42.265625+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\base_mesh_0.xml</Key>
+        <Value>2009-03-19T18:28:06.53125+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\base_template_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\tracks_mesh.X</Source>
+      <Name>Models\tracks_mesh</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\tracks_mesh.xnb</Output>
+      <Time>2009-03-04T18:24:33.921875+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\tracks_mesh_0.xml</Key>
+        <Value>2009-03-19T18:28:07.59375+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\template_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\turret_mesh.X</Source>
+      <Name>Models\turret_mesh</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\turret_mesh.xnb</Output>
+      <Time>2009-03-06T17:36:46.9945+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\turret_mesh_0.xml</Key>
+        <Value>2009-03-19T18:28:07.984375+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\turret_template_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\muzzle_mesh.X</Source>
+      <Name>Models\muzzle_mesh</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\muzzle_mesh.xnb</Output>
+      <Time>2009-01-29T21:42:51.21875+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\muzzle_mesh_0.xml</Key>
+        <Value>2009-03-19T18:28:08.828125+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\tree.X</Source>
+      <Name>Models\tree</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\tree.xnb</Output>
+      <Time>2009-03-04T22:48:08.578125+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\tree_0.xml</Key>
+        <Value>2009-03-19T18:28:08.9375+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\giantLeC_0.xnb</Request>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\barkG_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\woodbox_1.X</Source>
+      <Name>Models\woodbox_1</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodbox_1.xnb</Output>
+      <Time>2009-03-04T22:48:25.71875+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\woodbox_1_0.xml</Key>
+        <Value>2009-03-19T18:28:09.765625+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodb1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\woodbox_2.X</Source>
+      <Name>Models\woodbox_2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodbox_2.xnb</Output>
+      <Time>2009-03-04T22:49:17.875+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\woodbox_2_0.xml</Key>
+        <Value>2009-03-19T18:28:10.15625+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodb2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\woodbox_3.X</Source>
+      <Name>Models\woodbox_3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodbox_3.xnb</Output>
+      <Time>2009-03-04T22:49:32.28125+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\woodbox_3_0.xml</Key>
+        <Value>2009-03-19T18:28:10.5+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodb3_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\woodbox_4.X</Source>
+      <Name>Models\woodbox_4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodbox_4.xnb</Output>
+      <Time>2009-03-04T22:50:12.109375+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\woodbox_4_0.xml</Key>
+        <Value>2009-03-19T18:28:10.84375+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodb4_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\pallet.X</Source>
+      <Name>Models\pallet</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\pallet.xnb</Output>
+      <Time>2009-03-19T03:19:47.078125+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\pallet_0.xml</Key>
+        <Value>2009-03-19T18:28:11.25+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\WOOD_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\tree_2.X</Source>
+      <Name>Models\tree_2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\tree_2.xnb</Output>
+      <Time>2009-03-19T07:50:41.546875+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\tree_2_0.xml</Key>
+        <Value>2009-03-19T18:28:11.796875+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\mapleCo_0.xnb</Request>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\bark_c_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\desert_bush.X</Source>
+      <Name>Models\desert_bush</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\desert_bush.xnb</Output>
+      <Time>2009-03-19T17:12:02.578125+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\desert_bush_0.xml</Key>
+        <Value>2009-03-19T18:28:12.515625+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\bBushCo_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\forest_bush.X</Source>
+      <Name>Models\forest_bush</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\forest_bush.xnb</Output>
+      <Time>2009-03-19T17:12:27+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\forest_bush_0.xml</Key>
+        <Value>2009-03-19T18:28:12.96875+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\giantLeC_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\barrel_1.X</Source>
+      <Name>Models\barrel_1</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\barrel_1.xnb</Output>
+      <Time>2009-03-04T22:45:44.421875+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\barrel_1_0.xml</Key>
+        <Value>2009-03-19T18:28:13.0625+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\barrel01_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\barrel_2.X</Source>
+      <Name>Models\barrel_2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\barrel_2.xnb</Output>
+      <Time>2009-03-04T22:43:52.390625+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\barrel_2_0.xml</Key>
+        <Value>2009-03-19T18:28:13.390625+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\barrel01_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\barrel_3.X</Source>
+      <Name>Models\barrel_3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\barrel_3.xnb</Output>
+      <Time>2009-03-04T22:45:02.8125+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\barrel_3_0.xml</Key>
+        <Value>2009-03-19T18:28:13.46875+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\mat_bar3_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\barrel_4.X</Source>
+      <Name>Models\barrel_4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\barrel_4.xnb</Output>
+      <Time>2009-03-04T22:45:16.59375+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\barrel_4_0.xml</Key>
+        <Value>2009-03-19T18:28:13.90625+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\mat_bar5_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\container_1.X</Source>
+      <Name>Models\container_1</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\container_1.xnb</Output>
+      <Time>2009-03-04T22:46:00.015625+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\container_1_0.xml</Key>
+        <Value>2009-03-19T18:28:14.21875+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\contb51_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\container_2.X</Source>
+      <Name>Models\container_2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\container_2.xnb</Output>
+      <Time>2009-03-04T22:46:58.515625+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\container_2_0.xml</Key>
+        <Value>2009-03-19T18:28:15.203125+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\cont2_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\jeep_body.X</Source>
+      <Name>Models\jeep_body</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_body.xnb</Output>
+      <Time>2009-03-26T09:07:34.99175+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\jeep_body_0.xml</Key>
+        <Value>2009-04-03T13:31:24.1904359+01:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_main_template_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\jeep_turret.X</Source>
+      <Name>Models\jeep_turret</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_turret.xnb</Output>
+      <Time>2009-03-26T09:04:22.319875+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\jeep_turret_0.xml</Key>
+        <Value>2009-04-03T13:31:24.4248109+01:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_template_1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\jeep_wheel.X</Source>
+      <Name>Models\jeep_wheel</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_wheel.xnb</Output>
+      <Time>2009-02-22T17:31:04.40625+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\jeep_wheel_0.xml</Key>
+        <Value>2009-03-19T18:28:18.453125+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_template_1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\shell_mesh.X</Source>
+      <Name>Models\shell_mesh</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\shell_mesh.xnb</Output>
+      <Time>2009-03-19T18:02:15.140625+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\shell_mesh_0.xml</Key>
+        <Value>2009-03-19T18:28:18.515625+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\bullet_template_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\carWheel.fbx</Source>
+      <Name>Models\carWheel</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\carWheel.xnb</Output>
+      <Time>2009-02-20T18:55:00.484375+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\carWheel_0.xml</Key>
+        <Value>2009-03-19T18:28:19.703125+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Sound\Explosion.mp3</Source>
+      <Name>Sound\Explosion</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Sound\Explosion.xnb</Output>
+      <Time>2009-03-18T14:31:19.578125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\base_mesh.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\base_mesh_0.xml</Output>
+      <Time>2009-03-04T18:24:42.265625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\base_template.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\base_template_0.xnb</Output>
+      <Time>2009-01-15T22:43:35.171875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tracks_mesh.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\tracks_mesh_0.xml</Output>
+      <Time>2009-03-04T18:24:33.921875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\template.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\template_0.xnb</Output>
+      <Time>2009-01-15T02:33:55.25+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\turret_mesh.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\turret_mesh_0.xml</Output>
+      <Time>2009-03-06T17:36:46.9945+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\turret_template.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\turret_template_0.xnb</Output>
+      <Time>2009-01-20T00:15:46.96875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\muzzle_mesh.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\muzzle_mesh_0.xml</Output>
+      <Time>2009-01-29T21:42:51.21875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tree.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\tree_0.xml</Output>
+      <Time>2009-03-04T22:48:08.578125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\giantLeC.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\giantLeC_0.xnb</Output>
+      <Time>2008-04-09T19:42:38+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\barkG.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\barkG_0.xnb</Output>
+      <Time>2008-04-09T18:13:52+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\woodbox_1.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\woodbox_1_0.xml</Output>
+      <Time>2009-03-04T22:48:25.71875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\woodb1.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodb1_0.xnb</Output>
+      <Time>2006-03-30T23:24:03.125+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\woodbox_2.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\woodbox_2_0.xml</Output>
+      <Time>2009-03-04T22:49:17.875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\woodb2.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodb2_0.xnb</Output>
+      <Time>2006-03-30T23:30:05.078125+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\woodbox_3.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\woodbox_3_0.xml</Output>
+      <Time>2009-03-04T22:49:32.28125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\woodb3.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodb3_0.xnb</Output>
+      <Time>2006-03-30T23:34:05.90625+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\woodbox_4.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\woodbox_4_0.xml</Output>
+      <Time>2009-03-04T22:50:12.109375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\woodb4.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\woodb4_0.xnb</Output>
+      <Time>2006-03-30T23:40:05.25+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\pallet.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\pallet_0.xml</Output>
+      <Time>2009-03-19T03:19:47.078125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\WOOD.TGA</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\WOOD_0.xnb</Output>
+      <Time>2008-08-31T10:47:02+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tree_2.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\tree_2_0.xml</Output>
+      <Time>2009-03-19T07:50:41.546875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\mapleCo.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\mapleCo_0.xnb</Output>
+      <Time>2008-04-10T20:26:28+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\bark_c.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\bark_c_0.xnb</Output>
+      <Time>2008-04-07T16:00:44+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\desert_bush.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\desert_bush_0.xml</Output>
+      <Time>2009-03-19T17:12:02.578125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\bBushCo.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\bBushCo_0.xnb</Output>
+      <Time>2008-05-16T14:31:18.578125+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\forest_bush.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\forest_bush_0.xml</Output>
+      <Time>2009-03-19T17:12:27+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\barrel_1.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\barrel_1_0.xml</Output>
+      <Time>2009-03-04T22:45:44.421875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\barrel01.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\barrel01_0.xnb</Output>
+      <Time>2006-03-28T21:46:21.6875+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\barrel_2.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\barrel_2_0.xml</Output>
+      <Time>2009-03-04T22:43:52.390625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\barrel_3.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\barrel_3_0.xml</Output>
+      <Time>2009-03-04T22:45:02.8125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\mat_bar3.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\mat_bar3_0.xnb</Output>
+      <Time>2006-03-28T22:58:12.984375+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\barrel_4.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\barrel_4_0.xml</Output>
+      <Time>2009-03-04T22:45:16.59375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\mat_bar5.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\mat_bar5_0.xnb</Output>
+      <Time>2006-03-28T23:03:31.984375+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\container_1.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\container_1_0.xml</Output>
+      <Time>2009-03-04T22:46:00.015625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\contb51.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\contb51_0.xnb</Output>
+      <Time>2009-01-17T19:04:15.546875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\container_2.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\container_2_0.xml</Output>
+      <Time>2009-03-04T22:46:58.515625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\cont2.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\cont2_0.xnb</Output>
+      <Time>2009-01-17T19:46:15.625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\jeep_body.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\jeep_body_0.xml</Output>
+      <Time>2009-03-26T09:07:34.99175+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\jeep_main_template.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_main_template_0.xnb</Output>
+      <Time>2009-01-28T19:57:11.953125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\jeep_template_1.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_template_1_0.xnb</Output>
+      <Time>2009-01-27T22:44:54.121375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\jeep_turret.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\jeep_turret_0.xml</Output>
+      <Time>2009-03-26T09:04:22.319875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\jeep_wheel.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\jeep_wheel_0.xml</Output>
+      <Time>2009-02-22T17:31:04.40625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\shell_mesh.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\shell_mesh_0.xml</Output>
+      <Time>2009-03-19T18:02:15.140625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\bullet_template.bmp</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\bullet_template_0.xnb</Output>
+      <Time>2009-03-25T17:07:24.8359253+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\carWheel.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\carWheel_0.xml</Output>
+      <Time>2009-02-20T18:55:00.484375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\HUD\HUD Icons-01.png</Source>
+      <Name>Gui\HUD\HUD Icons-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\HUD\HUD Icons-01.xnb</Output>
+      <Time>2009-03-20T11:58:05.015625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\HUD\HUD Icons-02.png</Source>
+      <Name>Gui\HUD\HUD Icons-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\HUD\HUD Icons-02.xnb</Output>
+      <Time>2009-03-20T11:58:05.0625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\HUD\HUD Icons-03.png</Source>
+      <Name>Gui\HUD\HUD Icons-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\HUD\HUD Icons-03.xnb</Output>
+      <Time>2009-03-20T11:58:04.8125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\HUD\HUD Icons-04.png</Source>
+      <Name>Gui\HUD\HUD Icons-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\HUD\HUD Icons-04.xnb</Output>
+      <Time>2009-03-20T11:58:04.859375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\HUD\HUD Icons-05.png</Source>
+      <Name>Gui\HUD\HUD Icons-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\HUD\HUD Icons-05.xnb</Output>
+      <Time>2009-03-20T11:58:04.875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\HUD\HUD Icons-06.png</Source>
+      <Name>Gui\HUD\HUD Icons-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\HUD\HUD Icons-06.xnb</Output>
+      <Time>2009-03-20T11:58:04.90625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\HUD\HUD Icons-07.png</Source>
+      <Name>Gui\HUD\HUD Icons-07</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\HUD\HUD Icons-07.xnb</Output>
+      <Time>2009-03-20T11:58:04.96875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonFind-01.png</Source>
+      <Name>Gui\Buttons\ButtonFind-01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonFind-01.xnb</Output>
+      <Time>2009-03-23T20:43:51.34375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonFind-02.png</Source>
+      <Name>Gui\Buttons\ButtonFind-02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonFind-02.xnb</Output>
+      <Time>2009-03-23T20:43:51.375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonFind-03.png</Source>
+      <Name>Gui\Buttons\ButtonFind-03</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonFind-03.xnb</Output>
+      <Time>2009-03-23T20:43:51.1875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonFind-04.png</Source>
+      <Name>Gui\Buttons\ButtonFind-04</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonFind-04.xnb</Output>
+      <Time>2009-03-23T20:43:51.234375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonFind-05.png</Source>
+      <Name>Gui\Buttons\ButtonFind-05</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonFind-05.xnb</Output>
+      <Time>2009-03-23T20:43:51.28125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Gui\Buttons\ButtonFind-06.png</Source>
+      <Name>Gui\Buttons\ButtonFind-06</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Gui\Buttons\ButtonFind-06.xnb</Output>
+      <Time>2009-03-23T20:43:51.3125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Sound\MetalHit.mp3</Source>
+      <Name>Sound\MetalHit</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Sound\MetalHit.xnb</Output>
+      <Time>2009-03-23T20:43:55.75+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Sound\WoodHit.mp3</Source>
+      <Name>Sound\WoodHit</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Sound\WoodHit.xnb</Output>
+      <Time>2009-03-23T20:43:55.828125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Sound\Bugle.wav</Source>
+      <Name>Sound\Bugle</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Sound\Bugle.xnb</Output>
+      <Time>2009-03-23T20:43:55.796875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_1.X</Source>
+      <Name>Models\tank_pieces_1</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\tank_pieces_1.xnb</Output>
+      <Time>2009-03-25T23:24:08.1640503+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\tank_pieces_1_0.xml</Key>
+        <Value>2009-03-26T00:32:19.86675+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_2.X</Source>
+      <Name>Models\tank_pieces_2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\tank_pieces_2.xnb</Output>
+      <Time>2009-03-25T23:24:19.8046753+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\tank_pieces_2_0.xml</Key>
+        <Value>2009-03-26T00:32:20.257375+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_3.X</Source>
+      <Name>Models\tank_pieces_3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\tank_pieces_3.xnb</Output>
+      <Time>2009-03-25T23:24:32.0546753+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\tank_pieces_3_0.xml</Key>
+        <Value>2009-03-26T00:32:20.382375+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_4.X</Source>
+      <Name>Models\tank_pieces_4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\tank_pieces_4.xnb</Output>
+      <Time>2009-03-25T23:24:49.9296753+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\tank_pieces_4_0.xml</Key>
+        <Value>2009-03-26T00:32:20.49175+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_5.X</Source>
+      <Name>Models\tank_pieces_5</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\tank_pieces_5.xnb</Output>
+      <Time>2009-03-25T23:25:02.3359253+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\tank_pieces_5_0.xml</Key>
+        <Value>2009-03-26T00:32:20.61675+00:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_1.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\tank_pieces_1_0.xml</Output>
+      <Time>2009-03-25T23:24:08.1640503+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\scroch.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Output>
+      <Time>2009-03-25T23:19:46.7421753+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_2.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\tank_pieces_2_0.xml</Output>
+      <Time>2009-03-25T23:24:19.8046753+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_3.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\tank_pieces_3_0.xml</Output>
+      <Time>2009-03-25T23:24:32.0546753+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_4.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\tank_pieces_4_0.xml</Output>
+      <Time>2009-03-25T23:24:49.9296753+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tank_pieces_5.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\tank_pieces_5_0.xml</Output>
+      <Time>2009-03-25T23:25:02.3359253+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\jeep_pieces_1.X</Source>
+      <Name>Models\jeep_pieces_1</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_pieces_1.xnb</Output>
+      <Time>2009-03-26T09:16:39.913625+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\jeep_pieces_1_0.xml</Key>
+        <Value>2009-04-03T13:31:24.5341859+01:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\jeep_pieces_2.X</Source>
+      <Name>Models\jeep_pieces_2</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_pieces_2.xnb</Output>
+      <Time>2009-03-26T09:25:24.413625+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\jeep_pieces_2_0.xml</Key>
+        <Value>2009-04-03T13:31:24.6591859+01:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\jeep_pieces_3.X</Source>
+      <Name>Models\jeep_pieces_3</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_pieces_3.xnb</Output>
+      <Time>2009-03-26T09:31:01.80425+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\jeep_pieces_3_0.xml</Key>
+        <Value>2009-04-03T13:31:24.7685609+01:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\jeep_pieces_4.X</Source>
+      <Name>Models\jeep_pieces_4</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\jeep_pieces_4.xnb</Output>
+      <Time>2009-03-26T09:35:46.11675+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Release\Models\jeep_pieces_4_0.xml</Key>
+        <Value>2009-04-03T13:31:24.8779359+01:00</Value>
+      </Dependency>
+      <Request>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Models\scroch_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\jeep_pieces_1.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\jeep_pieces_1_0.xml</Output>
+      <Time>2009-03-26T09:16:39.913625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\jeep_pieces_2.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\jeep_pieces_2_0.xml</Output>
+      <Time>2009-03-26T09:25:24.413625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\jeep_pieces_3.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\jeep_pieces_3_0.xml</Output>
+      <Time>2009-03-26T09:31:01.80425+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\jeep_pieces_4.X</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Release\Models\jeep_pieces_4_0.xml</Output>
+      <Time>2009-03-26T09:35:46.11675+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Smoke.png</Source>
+      <Name>Particles\Smoke</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Particles\Smoke.xnb</Output>
+      <Time>2009-03-25T21:22:50.4140503+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Flame1.png</Source>
+      <Name>Particles\Flame1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Particles\Flame1.xnb</Output>
+      <Time>2009-03-25T21:22:50.4453003+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Muzzle1.png</Source>
+      <Name>Particles\Muzzle1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Particles\Muzzle1.xnb</Output>
+      <Time>2009-03-25T21:22:50.4765503+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Muzzle2.png</Source>
+      <Name>Particles\Muzzle2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="GenerateMipmaps">True</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Particles\Muzzle2.xnb</Output>
+      <Time>2009-03-25T21:22:50.5390503+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Snow1.png</Source>
+      <Name>Particles\Snow1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Particles\Snow1.xnb</Output>
+      <Time>2009-03-29T14:47:09.734375+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Particles\Rain1.png</Source>
+      <Name>Particles\Rain1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\Particles\Rain1.xnb</Output>
+      <Time>2009-03-29T14:47:09.765625+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Release</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>K:\Current Code\CGT\TankyPanky\Tanky\Content\</RootDirectory>
+      <LoggerRootDirectory>K:\Current Code\CGT\TankyPanky\Tanky\</LoggerRootDirectory>
+      <IntermediateDirectory>K:\Current Code\CGT\TankyPanky\Tanky\Content\obj\x86\Release\</IntermediateDirectory>
+      <OutputDirectory>K:\Current Code\CGT\TankyPanky\Tanky\bin\x86\Release\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2008-10-10T18:42:32+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2008-10-10T18:43:28+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2008-10-10T18:43:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2008-10-10T18:48:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2008-10-10T18:48:50+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.0.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2009-01-29T21:23:34.734375+00:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

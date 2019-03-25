@@ -1,0 +1,8 @@
+model: grenadel
+modeldir: data/models/guns/grenadel
+range: 3000
+fireRate: 0.3
+fireTimer: 0
+bulletSpeed: 50
+shotType: 4
+damage: 15

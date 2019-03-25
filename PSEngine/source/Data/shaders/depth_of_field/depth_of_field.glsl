@@ -1,0 +1,3 @@
+shader_config
+vertex depth_of_field/depth_of_fieldV.vert
+fragment depth_of_field/depth_of_fieldF.frag

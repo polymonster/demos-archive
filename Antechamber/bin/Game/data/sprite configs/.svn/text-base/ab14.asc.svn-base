@@ -1,0 +1,13 @@
+#player sprite config
+
+number_of_states 8
+state_frames STAND 1
+state_frames WALK 8
+state_frames DEATH 8
+state_frames JUMP 3
+state_frames INAIR 2
+state_frames LAND 1
+state_frames SAVE 8
+state_frames SPAWN 6
+total_frames 37 : for 20 : 8 20 , for 1 : 9 18 , for 1 : 10 19 , for 1 : 8 20 , for 14 : 9 20
+#end

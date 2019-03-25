@@ -1,0 +1,3 @@
+shader_config
+vertex luminance/luminance_iterateV.vert
+fragment luminance/luminance_iterateF.frag

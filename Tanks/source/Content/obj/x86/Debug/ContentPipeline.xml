@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>tank1_base.tga</Source>
+      <Name>tank1_base</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tank1_base.xnb</Output>
+      <Time>2008-11-25T20:00:17.203125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tank1_turret.tga</Source>
+      <Name>tank1_turret</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tank1_turret.xnb</Output>
+      <Time>2008-11-09T22:16:23.40625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tank2_base.tga</Source>
+      <Name>tank2_base</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tank2_base.xnb</Output>
+      <Time>2008-11-25T20:00:17.21875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tank3_base.tga</Source>
+      <Name>tank3_base</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tank3_base.xnb</Output>
+      <Time>2008-11-09T22:16:23.28125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tank4_base.tga</Source>
+      <Name>tank4_base</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tank4_base.xnb</Output>
+      <Time>2008-11-09T22:16:23.3125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>shell_1.tga</Source>
+      <Name>shell_1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\shell_1.xnb</Output>
+      <Time>2008-11-10T21:29:37.15625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>background.tga</Source>
+      <Name>background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2008-11-26T01:31:04.46875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>mainlogo.tga</Source>
+      <Name>mainlogo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\mainlogo.xnb</Output>
+      <Time>2008-12-01T23:13:05.921875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>mainbg.tga</Source>
+      <Name>mainbg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\mainbg.xnb</Output>
+      <Time>2008-12-01T23:13:06.515625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>startbutton.tga</Source>
+      <Name>startbutton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\startbutton.xnb</Output>
+      <Time>2008-12-01T23:13:06.46875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>startbuttonm.tga</Source>
+      <Name>startbuttonm</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\startbuttonm.xnb</Output>
+      <Time>2008-12-01T23:13:06.296875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>mouse.tga</Source>
+      <Name>mouse</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\mouse.xnb</Output>
+      <Time>2008-11-10T10:38:16.5625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Font.spritefont</Source>
+      <Name>Font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\Font.xnb</Output>
+      <Time>2008-11-25T21:34:10.40625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>ico360pad.tga</Source>
+      <Name>ico360pad</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\ico360pad.xnb</Output>
+      <Time>2008-11-25T22:44:12.296875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>icokeyboard1.tga</Source>
+      <Name>icokeyboard1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\icokeyboard1.xnb</Output>
+      <Time>2008-11-25T22:44:12.03125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>icokeyboard2.tga</Source>
+      <Name>icokeyboard2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\icokeyboard2.xnb</Output>
+      <Time>2008-11-25T22:44:12.1875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>infobutton.tga</Source>
+      <Name>infobutton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\infobutton.xnb</Output>
+      <Time>2008-12-02T03:12:10.140625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>infobuttonovr.tga</Source>
+      <Name>infobuttonovr</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\infobuttonovr.xnb</Output>
+      <Time>2008-12-02T03:12:10.421875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tankselectgrid.tga</Source>
+      <Name>tankselectgrid</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tankselectgrid.xnb</Output>
+      <Time>2008-12-02T03:12:10.265625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>gobutton.tga</Source>
+      <Name>gobutton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\gobutton.xnb</Output>
+      <Time>2008-12-02T09:13:46.59375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>gobuttonovr.tga</Source>
+      <Name>gobuttonovr</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\gobuttonovr.xnb</Output>
+      <Time>2008-12-02T09:13:46.46875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>numbers.tga</Source>
+      <Name>numbers</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\numbers.xnb</Output>
+      <Time>2008-11-09T22:16:23.296875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tank_tracks.tga</Source>
+      <Name>tank_tracks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tank_tracks.xnb</Output>
+      <Time>2008-11-26T01:05:52.484375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>bloc_tile.tga</Source>
+      <Name>bloc_tile</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\bloc_tile.xnb</Output>
+      <Time>2008-11-25T20:49:56.484375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>title_select.tga</Source>
+      <Name>title_select</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\title_select.xnb</Output>
+      <Time>2008-12-02T03:12:10.484375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>title_setup.tga</Source>
+      <Name>title_setup</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\title_setup.xnb</Output>
+      <Time>2008-12-02T03:12:10.640625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>gamemode_lms.tga</Source>
+      <Name>gamemode_lms</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\gamemode_lms.xnb</Output>
+      <Time>2008-12-02T03:12:10.21875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>gamemode_sdm.tga</Source>
+      <Name>gamemode_sdm</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\gamemode_sdm.xnb</Output>
+      <Time>2008-12-02T03:12:10.515625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>gamemode_tdm.tga</Source>
+      <Name>gamemode_tdm</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\gamemode_tdm.xnb</Output>
+      <Time>2008-12-02T03:12:10.546875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>backbutton.tga</Source>
+      <Name>backbutton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\backbutton.xnb</Output>
+      <Time>2008-12-02T09:13:46.5625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>backbuttonovr.tga</Source>
+      <Name>backbuttonovr</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\backbuttonovr.xnb</Output>
+      <Time>2008-12-02T09:13:46.53125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>smoke.tga</Source>
+      <Name>smoke</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\smoke.xnb</Output>
+      <Time>2008-11-24T22:03:34.96875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>explosion.tga</Source>
+      <Name>explosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\explosion.xnb</Output>
+      <Time>2008-11-26T12:38:45.125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>arrowl.tga</Source>
+      <Name>arrowl</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\arrowl.xnb</Output>
+      <Time>2008-12-02T03:12:10.359375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>arrowlovr.tga</Source>
+      <Name>arrowlovr</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\arrowlovr.xnb</Output>
+      <Time>2008-12-01T23:13:06.140625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>arrowr.tga</Source>
+      <Name>arrowr</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\arrowr.xnb</Output>
+      <Time>2008-12-02T03:12:10.390625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>arrowrovr.tga</Source>
+      <Name>arrowrovr</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\arrowrovr.xnb</Output>
+      <Time>2008-12-01T23:13:06.265625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>mapselect_title.tga</Source>
+      <Name>mapselect_title</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\mapselect_title.xnb</Output>
+      <Time>2008-12-02T03:12:10.453125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>map1thumb.tga</Source>
+      <Name>map1thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\map1thumb.xnb</Output>
+      <Time>2008-12-01T23:13:06.5625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>map2thumb.tga</Source>
+      <Name>map2thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\map2thumb.xnb</Output>
+      <Time>2008-12-01T23:13:06.1875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>map3thumb.tga</Source>
+      <Name>map3thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\map3thumb.xnb</Output>
+      <Time>2008-12-01T23:13:06.59375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>map4thumb.tga</Source>
+      <Name>map4thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\map4thumb.xnb</Output>
+      <Time>2008-12-01T23:13:06.21875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>map5thumb.tga</Source>
+      <Name>map5thumb</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\map5thumb.xnb</Output>
+      <Time>2008-12-01T23:13:06.6875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>background2.tga</Source>
+      <Name>background2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\background2.xnb</Output>
+      <Time>2008-11-30T23:15:24.3125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>background3.tga</Source>
+      <Name>background3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\background3.xnb</Output>
+      <Time>2008-11-30T23:15:24.328125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>background4.tga</Source>
+      <Name>background4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\background4.xnb</Output>
+      <Time>2008-11-30T23:15:24.34375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>background5.tga</Source>
+      <Name>background5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\background5.xnb</Output>
+      <Time>2008-11-30T23:15:24.34375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>quitbutton.tga</Source>
+      <Name>quitbutton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\quitbutton.xnb</Output>
+      <Time>2008-12-01T23:13:06+00:00</Time>
+    </Item>
+    <Item>
+      <Source>quitbuttonm.tga</Source>
+      <Name>quitbuttonm</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\quitbuttonm.xnb</Output>
+      <Time>2008-12-01T23:13:06.125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>selectbg.tga</Source>
+      <Name>selectbg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\selectbg.xnb</Output>
+      <Time>2008-12-02T03:12:10.171875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>setupbg.tga</Source>
+      <Name>setupbg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\setupbg.xnb</Output>
+      <Time>2008-12-02T03:12:10.09375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tickcross_no-yes.tga</Source>
+      <Name>tickcross_no-yes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tickcross_no-yes.xnb</Output>
+      <Time>2008-12-01T23:13:06.171875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tickcross_no.tga</Source>
+      <Name>tickcross_no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tickcross_no.xnb</Output>
+      <Time>2008-12-01T23:13:06.203125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tickcross_yes-no.tga</Source>
+      <Name>tickcross_yes-no</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tickcross_yes-no.xnb</Output>
+      <Time>2008-12-01T23:13:06.15625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>tickcross_yes.tga</Source>
+      <Name>tickcross_yes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\tickcross_yes.xnb</Output>
+      <Time>2008-12-01T23:13:06.453125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>player1.tga</Source>
+      <Name>player1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\player1.xnb</Output>
+      <Time>2008-12-02T03:14:29.109375+00:00</Time>
+    </Item>
+    <Item>
+      <Source>player2.tga</Source>
+      <Name>player2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\player2.xnb</Output>
+      <Time>2008-12-02T03:14:29.140625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>player3.tga</Source>
+      <Name>player3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\player3.xnb</Output>
+      <Time>2008-12-02T03:14:29.171875+00:00</Time>
+    </Item>
+    <Item>
+      <Source>player4.tga</Source>
+      <Name>player4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\player4.xnb</Output>
+      <Time>2008-12-02T03:14:29.203125+00:00</Time>
+    </Item>
+    <Item>
+      <Source>finishbg.tga</Source>
+      <Name>finishbg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\finishbg.xnb</Output>
+      <Time>2008-12-02T03:15:17.265625+00:00</Time>
+    </Item>
+    <Item>
+      <Source>infobg.tga</Source>
+      <Name>infobg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\infobg.xnb</Output>
+      <Time>2008-12-02T03:12:10.3125+00:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <RootDirectory>K:\Current Code\2DCoursework\Tanks\Content\</RootDirectory>
+      <LoggerRootDirectory>K:\Current Code\2DCoursework\Tanks\</LoggerRootDirectory>
+      <IntermediateDirectory>K:\Current Code\2DCoursework\Tanks\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>K:\Current Code\2DCoursework\Tanks\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v2.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2007-11-28T13:08:00+00:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v2.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2007-11-28T13:08:42+00:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v2.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2007-11-28T13:08:30+00:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v2.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2007-11-28T13:07:44+00:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\WINDOWS\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\2.0.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2008-02-28T19:46:31.390625+00:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

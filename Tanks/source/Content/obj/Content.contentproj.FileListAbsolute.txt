@@ -1,0 +1,2 @@
+K:\Current Code\2DCoursework\Tanks\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\Current Code\CGT Semester 1\Tanks\Content\obj\x86\Release\ResolveAssemblyReference.cache

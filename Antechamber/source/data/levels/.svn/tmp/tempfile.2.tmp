@@ -1,0 +1,33 @@
+energy_cell 20 6 ;
+energy_cell 19 6 ;
+energy_cell 18 6 ;
+energy_cell 15 6 ;
+energy_cell 14 6 ;
+energy_cell 10 6 ;
+energy_cell 11 6 ;
+energy_cell 12 6 ;
+turret 30 6 2 1 ;
+turret 10 1 2 1 ;
+turret 20 1 2 1 ;
+turret 5 4 2 2 ;
+energy_cell 6 7 ;
+energy_cell 4 7 ;
+energy_cell 28 9 ;
+energy_cell 32 9 ;
+energy_cell 30 8 ;
+energy_cell 29 8 ;
+energy_cell 31 8 ;
+energy_cell 19 12 ;
+energy_cell 19 11 ;
+smartball 15 9 ;
+control_panel 3 13 0 ;
+intercom 1 13 0 ;
+gate 14 9 0 0 ;
+<<<<<<< .mine
+turret 11 9 0 2 ;
+turret 17 9 0 2 ;
+turret 35 9 0 2 ;
+turret 2 9 2 2 ;
+=======
+spawn 0 12 ;
+>>>>>>> .r198

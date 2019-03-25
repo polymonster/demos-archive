@@ -1,0 +1,13 @@
+model: grenadel
+modeldir: data/models/guns/grenadel
+range: 3000
+fireRate: 0.3
+fireTimer: 0
+bulletSpeed: 50
+reloadRate: 1
+clipSize: 30
+maxClips: 20
+pickup: 10
+shotType: 4
+damage: 15
+muzzleFlare: data/textures/particles/flares/f_grenadel.bmp

@@ -1,0 +1,8 @@
+model: shotgun
+modeldir: data/models/guns/shotgun
+range: 1000
+fireRate: 1
+fireTimer: 0
+bulletSpeed: 60
+shotType: 2
+damage: 8

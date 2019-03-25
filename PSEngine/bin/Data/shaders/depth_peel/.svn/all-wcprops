@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/shadow_depth
+END
+shadow_depth.glsl
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/shadow_depth/shadow_depth.glsl
+END
+shadow_depthF.frag
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/shadow_depth/shadow_depthF.frag
+END
+shadow_depthV.vert
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/hadron2dcwk1/!svn/ver/537/PolySpoon/Data/shadow_depth/shadow_depthV.vert
+END
